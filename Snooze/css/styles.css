@@ -2,7 +2,9 @@
 body {
   background: linear-gradient(to bottom, #a1acb7, #b29481);
 }
-
+.main-content{
+  min-height: 100vh;
+}
 /* Portofino Bold */
 .portofino-bold {
   font-family: 'PortofinoBold', sans-serif;
@@ -36,8 +38,13 @@ body {
     margin: 5px; /* Espacement entre les boutons */
 }
 
+
+
+
+
+
 #site-header{
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.6);
   padding-bottom: 3vh;
   
 }
@@ -66,7 +73,7 @@ body {
     justify-content: space-between;
     margin-left: 0px; /* Marge à gauche de l'écran */
     margin-right: 0px; /* Marge à droite de l'écran */
-    padding-top: 3vh;
+    padding-top: 2vh;
 }
 
 #lang-toggle {
@@ -101,7 +108,7 @@ body {
   padding-top: 10%;
   display: none;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.6);
   z-index: 1;
 }
 
@@ -200,14 +207,14 @@ body {
   #mobile-logo-container {
       display: block;
       align-items: center;
-      margin-top: 5%;
+      margin-top: 2%;
   }
 
   /* Afficher le menu burger */
   #burger-menu-icon {
       display: block;
       margin-right: 11%;
-      margin-top: 6%;
+      margin-top: 2.5%;
       width: 8%;
       top: auto;
   }
@@ -329,6 +336,10 @@ body {
   position: relative;
 }
 
+.image-container:hover .overlay-square {
+  color: white; /* Changer la couleur du texte lors du survol */
+}
+
 .overlay-square {
   display: flex;
   justify-content: center;
@@ -385,7 +396,7 @@ body {
 
   
   .footer-dark h3 {
-    margin-top:0;
+    margin-top:0%;
     margin-bottom:12px;
     font-weight:bold;
     font-size:16px;
@@ -467,3 +478,85 @@ body {
     font-size:13px;
     margin-bottom:0;
   }
+
+
+
+
+
+
+
+/* Styles CSS */
+.nav {
+  width: 200px;
+  list-style: none;
+  padding: 0;
+  margin-left: 5%;
+  padding-top: 10%;
+}
+
+.nav-item {
+  margin-bottom: 0px;
+  padding: 0%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  display: block; /* Affiche les boutons les uns en dessous des autres */
+}
+
+.nav-link:hover {
+  color: #78a5b9; /* Change la couleur au survol */
+}
+
+.nav-link.active {
+  border: 2px solid #050118;
+  border-radius: 50px; /* Ajustez la valeur pour arrondir davantage */
+  color: #050118; /* Change la couleur au clic */
+  width: 350px;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+.article {
+  padding-left: 10%;
+  padding-top: 5%;
+  display: none; /* Cache tous les articles par défaut */
+}
+
+.article.active {
+  display: block; /* Affiche l'article actif */
+}
+
+.trouble-link {
+  text-decoration: none; /* Supprimer le soulignement du lien */
+  cursor: pointer; /* Définir le curseur sur pointer */
+  color: #333; /* Couleur du texte normale */
+}
+
+.text-article{
+  padding: 1%;
+  margin-left: 5%;
+  width: 30%;
+  height: 50%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.titre-article{
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+
+.carré {
+  margin-bottom: 50px;
+  width: 500px; /* Ajustez la largeur selon vos besoins */
+  height: 300px; /* Ajustez la hauteur selon vos besoins */
+  border: 2px solid black; /* Contour noir */
+  border-top: 0px solid black; /* Contour noir */
+  border-top-left-radius: 10px; /* Coins arrondis en haut à gauche */
+  border-top-right-radius: 10px; /* Coins arrondis en haut à droite */
+  border-bottom-left-radius: 10px; /* Coins droits en bas à gauche */
+  border-bottom-right-radius: 10px; /* Coins droits en bas à droite */
+}

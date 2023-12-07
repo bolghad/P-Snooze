@@ -26,7 +26,7 @@
         background-size: cover;
     }
     </style>
-    <?php wp_head(); ?>
+    <?php wp_head(); ?> 
 </head>
 
 <body style="background: linear-gradient(#000 20%, #666334,  50% hsl(120, 50%, 50%))">
@@ -45,8 +45,8 @@
                     <div class="dropdown">
                         <button class="header-button">Conseils</button>
                         <div class="dropdown-content">
-                            <a href="#">Troubles</a>
-                            <a href="#">Guides</a>
+                            <a href="<?php echo get_template_directory_uri(); ?>/troubles">Troubles</a>
+                            <a href="<?php echo get_template_directory_uri(); ?>/guides">Guides</a>
                         </div>
                     </div>
                     <a class="header-button">Carte</a>
