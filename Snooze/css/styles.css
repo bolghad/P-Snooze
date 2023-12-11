@@ -312,8 +312,8 @@ body {
 
 /* Styles pour la deuxième section */
 #deuxiemeSection {
-  margin-left: 15%;
-  width: 70%;
+  margin-left: 10%;
+  width: 80%;
   overflow: hidden;
 }
 
@@ -487,36 +487,73 @@ body {
 
 /* Styles CSS */
 .nav {
-  width: 200px;
+  width: 350px;
   list-style: none;
   padding: 0;
   margin-left: 5%;
-  padding-top: 10%;
+  margin-top: 0; /* Ajout de margin-top: 0 pour supprimer l'espace au-dessus */
+  padding-bottom: 0; /* Ajout de padding-bottom: 0 pour supprimer le padding en bas */
+}
+
+.list-unstyled {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-item {
-  margin-bottom: 0px;
-  padding: 0%;
+  margin: 0; /* Ajustement de la marge */
+  padding: 0; /* Ajustement du padding */
 }
 
 .nav-link {
+  padding-top: 0%;
   text-decoration: none;
   color: #000;
   display: block; /* Affiche les boutons les uns en dessous des autres */
+  position: relative; /* Ajoutez une position relative pour l'élément parent */
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #050118;
+  transition: width 3s ease; /* Animation de la largeur en 3 secondes */
+  z-index: -1; /* Placez-le en arrière-plan derrière le texte */
+  border-radius: 50px;
 }
 
 .nav-link:hover {
-  color: #78a5b9; /* Change la couleur au survol */
+  color: #eff0df; /* Change la couleur au survol */
+}
+
+.nav-link.active::before {
+  width: 80%;
 }
 
 .nav-link.active {
-  border: 2px solid #050118;
-  border-radius: 50px; /* Ajustez la valeur pour arrondir davantage */
-  color: #050118; /* Change la couleur au clic */
-  width: 350px;
+ /* border: 2px solid #050118;
+  border-radius: 50px;  Ajustez la valeur pour arrondir davantage */
+  width: 400px;
   padding-bottom: 1%;
   padding-top: 1%;
+  margin-bottom: 2%;
+  color: #eff0df;
+  transition: width 3s;
 }
+
+
+.nav-link.active:hover::before {
+  width: 100%; /* Remplir complètement de gauche à droite au survol */
+}
+
+
+
+
 
 .article {
   padding-left: 10%;
@@ -534,29 +571,119 @@ body {
   color: #333; /* Couleur du texte normale */
 }
 
-.text-article{
-  padding: 1%;
+.text-article {
+  padding: 3%;
   margin-left: 5%;
-  width: 30%;
+  width: 30%; /* Largeur initiale */
   height: 50%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
+   /* Transition de la largeur en 3 secondes */
 }
 
-.titre-article{
+
+.article h2{
   text-align: center;
   padding-bottom: 5%;
+  margin-left: -10%;
 }
 
 
+/* Styles CSS de base, applicables à tous les appareils */
+.article-image-un {
+  object-fit: cover;
+  width: 35vw;
+  height: 50vh;
+  margin-left: -5%;
+  transition: opacity 1s;
+}
+.article-image-deux {
+  margin-left:10% ;
+  object-fit: cover;
+  width: 25vw;
+  height: 70vh;
+  transition: opacity 1s;
+}
+
+
+.article-image-un:hover,
+.article-image-deux:hover {
+  opacity: 0.7; /* Changez la valeur selon vos préférences */
+}
+
+.article-texte-un {
+  margin-left: -3%;
+  transition: width 2s;
+  transition: margin-left 3s, width 3s;
+}
+
+
+
+.article-texte-deux {
+  margin-top: 2%;
+  margin-left:10%;
+  width: 35%;
+  transition: margin-left 3s, width 3s;
+}
+
+@media (min-width: 782px) {
+.article-texte-deux:hover {
+  margin-left: 5%;
+  font-size: 20px;
+  width: 45%; /* Largeur finale au survol */
+}
+
+.article-texte-un:hover {
+  width: 40%; /* Largeur finale au survol */
+  font-size: 20px;
+  margin-left: -8%;
+}
+}
+/* Centrer tout dans .article sur les écrans mobiles */
+@media (max-width: 781px) {
+    .article-texte-deux:hover {
+      font-size: 20px;
+      width: 100%; /* Largeur finale au survol */
+    }
+    
+    .article-texte-un:hover {
+      width: 100%; /* Largeur finale au survol */
+      font-size: 20px;
+    }
+    .article, .article img, .article h2, .article p, .article button, .text-article {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%; /* Vous pouvez ajuster cette valeur selon vos besoins */
+    }
+
+    /* Pour les images, si vous voulez les centrer sans modifier leur taille */
+    .article img {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        object-fit: cover;
+        display: block; /* Les images sont inline par défaut, donc changez-les en block pour permettre le centrage avec margin */
+        max-width: 100%; /* Vous pouvez ajuster cette valeur pour contrôler la taille de l'image */
+        height: auto; /* Pour maintenir les proportions de l'image */
+        width: 70vw;
+        height: 50vh;
+    }
+}
+
+
+.bouton-contact{
+  width: 50%;
+  background-color: royalblue;
+  border-radius: 20px;
+  padding: 1%;
+  margin: 5%;
+  border:none;
+}
+
 .carré {
-  margin-bottom: 50px;
-  width: 500px; /* Ajustez la largeur selon vos besoins */
-  height: 300px; /* Ajustez la hauteur selon vos besoins */
-  border: 2px solid black; /* Contour noir */
-  border-top: 0px solid black; /* Contour noir */
-  border-top-left-radius: 10px; /* Coins arrondis en haut à gauche */
-  border-top-right-radius: 10px; /* Coins arrondis en haut à droite */
-  border-bottom-left-radius: 10px; /* Coins droits en bas à gauche */
-  border-bottom-right-radius: 10px; /* Coins droits en bas à droite */
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  margin: 3%;
+  height: 20vh;
 }

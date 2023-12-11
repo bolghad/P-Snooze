@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function generateGradient() {
     const now = new Date();
     //const hour = now.getHours();
-    const hour = 9;
+    const hour = 10;
 
 
 
@@ -105,7 +105,7 @@ generateGradient();
 
 
 
-//page troubles 
+//page troubles et guides
 
 // JavaScript
 document.addEventListener('DOMContentLoaded', function () {

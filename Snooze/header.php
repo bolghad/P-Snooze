@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/styles.css">
     <!-- ... autres balises head ... -->
     <style>
+       /* body{
+            cursor: url('<?php echo get_template_directory_uri(); ?>/img/icone.png')
+            1 1,
+            auto;          
+        }  */
         #loading-bar::after {
             content: '';
         position: absolute;
@@ -49,12 +54,12 @@
                             <a href="<?php echo get_template_directory_uri(); ?>/guides">Guides</a>
                         </div>
                     </div>
-                    <a class="header-button">Carte</a>
-                    <a class="header-button">Professionnels</a>
+                    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/carte">Carte</a>
+                    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/professionnels">Professionnels</a>
                 </div>
                 <!-- Logo (visible sur desktop) -->
                 <div id="logo-container">
-                    <a href="index.php">
+                    <a href="<?php echo get_template_directory_uri(); ?>/index">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo Snooze" id="logo">
                     </a>
                 </div>
@@ -63,12 +68,12 @@
                     <div class="dropdown">
                         <button class="header-button">Journal</button>
                         <div class="dropdown-content">
-                            <a href="#">Dashboard</a>
-                            <a href="#">Carnet</a>
-                            <a href="#">Paramètres</a>
+                            <a href="<?php echo get_template_directory_uri(); ?>/dashboard">Dashboard</a>
+                            <a href="<?php echo get_template_directory_uri(); ?>/carnet">Carnet</a>
+                            <a href="<?php echo get_template_directory_uri(); ?>/paramètres">Paramètres</a>
                         </div>
                     </div>
-                    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/pages/compte/inscription.php">Connexion</a>
+                    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/connexion">Connexion</a>
                     <div class="dropdown">
                         <button class="header-button">Fr</button>
                         <div class="dropdown-content">
@@ -91,7 +96,7 @@
 <!-- Logo (visible sur mobile) -->
 <div id="mobile-logo-container">
     <a href="index.php">
-        <img id ="logo-mobile" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo Snooze" id="mobile-logo">
+        <img id ="logo-mobile" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo Snooze" id="mobile-logo" href="<?php echo get_template_directory_uri(); ?>/index.php">
     </a>
 </div>
 
@@ -100,21 +105,21 @@
     <div class="dropdown">
         <button class="header-button">Conseils</button>
         <div class="dropdown-content">
-            <a href="#">Troubles</a>
-            <a href="#">Guides</a>
+            <a href="<?php echo get_template_directory_uri(); ?>/troubles">Troubles</a>
+            <a href="<?php echo get_template_directory_uri(); ?>/guides">Guides</a>
         </div>
     </div>
-    <a class="header-button">Carte</a>
-    <a class="header-button">Professionnels</a>
+    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/carte">Carte</a>
+    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/professionnels">Professionnels</a>
     <div class="dropdown">
         <button class="header-button">Journal</button>
         <div class="dropdown-content">
-            <a href="#">Dashboard</a>
-            <a href="#">Carnet</a>
-            <a href="#">Paramètres</a>
+            <a href="<?php echo get_template_directory_uri(); ?>/dashboard">Dashboard</a>
+            <a href="<?php echo get_template_directory_uri(); ?>/carnet">Carnet</a>
+            <a href="<?php echo get_template_directory_uri(); ?>/paramètres">Paramètres</a>
         </div>
     </div>
-    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/pages/compte/inscription.php">Connexion</a>
+    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/connexion">Connexion</a>
     <div class="dropdown">
         <button class="header-button">Fr</button>
         <div class="dropdown-content">
