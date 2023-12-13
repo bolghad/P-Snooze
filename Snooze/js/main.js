@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function generateGradient() {
     const now = new Date();
     //const hour = now.getHours();
-    const hour =9;
+    const hour =1;
 
 
 
@@ -215,73 +215,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-
-
-//Carousel 
-
-let items = document.querySelectorAll('.slider .list .item');
-let next = document.getElementById('next');
-let prev = document.getElementById('prev');
-let thumbnails = document.querySelectorAll('.thumbnail .item');
-
-// config param
-let countItem = items.length;
-let itemActive = 0;
-// event next click
-next.onclick = function(){
-    itemActive = itemActive + 1;
-    if(itemActive >= countItem){
-        itemActive = 0;
-    }
-    showSlider();
-}
-//event prev click
-prev.onclick = function(){
-    itemActive = itemActive - 1;
-    if(itemActive < 0){
-        itemActive = countItem - 1;
-    }
-    showSlider();
-}
-
-function showSlider(){
-    // remove item active old
-    let itemActiveOld = document.querySelector('.slider .list .item.active');
-    let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
-    itemActiveOld.classList.remove('active');
-    thumbnailActiveOld.classList.remove('active');
-
-    // active new item
-    items[itemActive].classList.add('active');
-    thumbnails[itemActive].classList.add('active');
-
-}
-
-// click thumbnail
-thumbnails.forEach((thumbnail, index) => {
-    thumbnail.addEventListener('click', () => {
-        itemActive = index;
-        showSlider();
-    })
-})
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Loading bar 
 
 document.addEventListener('DOMContentLoaded', function() {
     const loadingBar = document.getElementById('loading-bar');
@@ -303,3 +237,89 @@ document.addEventListener('DOMContentLoaded', function() {
     currentTimeDisplay.innerText = `${hours}:${minutes}`;
     currentTimeDisplay.style.top = currentTimeHeight;
 });
+
+
+
+
+
+
+
+
+
+
+
+
+// Fonction générique pour le carousel
+function setupCarousel(sectionId) {
+    let items = document.querySelectorAll(`#${sectionId} .slider .list .item`);
+    let next = document.querySelector(`#${sectionId} .arrows #next`);
+    let prev = document.querySelector(`#${sectionId} .arrows #prev`);
+    let thumbnails = document.querySelectorAll(`#${sectionId} .thumbnail .item`);
+
+    // config param
+    let countItem = items.length;
+    let itemActive = 0;
+
+    // event next click
+    next.onclick = function() {
+        itemActive = itemActive + 1;
+        if (itemActive >= countItem) {
+            itemActive = 0;
+        }
+        showSlider();
+    }
+
+    // event prev click
+    prev.onclick = function() {
+        itemActive = itemActive - 1;
+        if (itemActive < 0) {
+            itemActive = countItem - 1;
+        }
+        showSlider();
+    }
+
+    // Function to show the active slider
+    function showSlider() {
+        // remove item active old
+        let itemActiveOld = document.querySelector(`#${sectionId} .slider .list .item.active`);
+        let thumbnailActiveOld = document.querySelector(`#${sectionId} .thumbnail .item.active`);
+        itemActiveOld.classList.remove('active');
+        thumbnailActiveOld.classList.remove('active');
+
+        // active new item
+        items[itemActive].classList.add('active');
+        thumbnails[itemActive].classList.add('active');
+    }
+
+    // click thumbnail
+    thumbnails.forEach((thumbnail, index) => {
+        thumbnail.addEventListener('click', () => {
+            itemActive = index;
+            showSlider();
+        })
+    });
+}
+
+// Appel de la fonction pour chaque section continentale
+setupCarousel('info-europe');
+setupCarousel('info-asie');
+setupCarousel('info-afrique');
+setupCarousel('info-amerique');
+setupCarousel('info-oceanie');
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

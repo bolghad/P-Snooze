@@ -1,6 +1,7 @@
 
 body {
   background: linear-gradient(to bottom, #a1acb7, #b29481);
+  transition: background 3s;
 }
 .main-content{
   margin-top: 10%;
