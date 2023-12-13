@@ -9,6 +9,8 @@
 
     <!-- Lien vers la bibliothèque Bootstrap depuis un CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
     <!-- Lien vers le fichier CSS global -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/styles.css">
@@ -42,7 +44,7 @@
     </div>
 
 <!-- En-tête -->
-<header class="fixed-top" id="site-header">
+<header class="fixed-top animate-de-haut" id="site-header">
     <div class="container">
             <div class="header-content">
                 <!-- Boutons de gauche (visible sur desktop) -->
@@ -95,8 +97,8 @@
 
 <!-- Logo (visible sur mobile) -->
 <div id="mobile-logo-container">
-    <a href="index.php">
-        <img id ="logo-mobile" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo Snooze" id="mobile-logo" href="<?php echo get_template_directory_uri(); ?>/index.php">
+    <a href="<?php echo get_template_directory_uri(); ?>/index">
+        <img id ="logo-mobile" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo Snooze" id="mobile-logo">
     </a>
 </div>
 

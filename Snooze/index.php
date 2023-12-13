@@ -11,19 +11,19 @@
     <div class="row">
 
       <!-- Image 1 -->
-      <div class="col-4 image-container">
+      <div class="col-4 image-container animate-de-bas">
         <div class="overlay-square overlay-Un">Conseils</div>
         <img src="<?php echo get_template_directory_uri(); ?>/img/acUn.png" class="img-fluid" alt="Image 1">
       </div>
 
       <!-- Image 2 -->
-      <div class="col-4 image-container">
+      <div class="col-4 image-container animate-de-bas">
         <div class="overlay-square overlay-Deux">Carte</div>
         <img src="<?php echo get_template_directory_uri(); ?>/img/acDeux.png" class="img-fluid" alt="Image 2">
       </div>
 
       <!-- Image 3 -->
-      <div class="col-4 image-container">
+      <div class="col-4 image-container animate-de-bas">
         <div class="overlay-square overlay-Trois">Professionnels</div>
         <img src="<?php echo get_template_directory_uri(); ?>/img/acTrois.png" class="img-fluid" alt="Image 3">
       </div>

@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function generateGradient() {
     const now = new Date();
     //const hour = now.getHours();
-    const hour = 10;
+    const hour =9;
 
 
 
@@ -130,6 +130,147 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+
+
+ //Page carte
+
+ document.addEventListener('DOMContentLoaded', function() {
+    var svgObject = document.getElementById('carte-du-monde');
+    svgObject.addEventListener('load', function() {
+        var svgDoc = svgObject.contentDocument;
+
+        // Définir les couleurs
+        var hoverColor = '#f0e2a8';
+        var selectedColor = '#08071d';
+        var originalColor = '#0f2338'; // La couleur originale définie par .cls-1
+
+        var selectedContinent = null; // Pour garder une trace du continent sélectionné
+
+        // Fonction pour masquer toutes les sections et réinitialiser les couleurs des continents
+        function hideAllSectionsAndResetContinents() {
+            document.querySelectorAll('.info-continent').forEach(function(el) {
+                el.style.display = 'none';
+            });
+
+            var continents = svgDoc.querySelectorAll('.cls-1');
+            continents.forEach(function(el) {
+                el.style.fill = originalColor;
+                el.classList.remove('continent-selected');
+            });
+
+            selectedContinent = null; // Réinitialiser le continent sélectionné
+        }
+
+        // Ajout des gestionnaires de clic et hover pour chaque continent
+        var continentIds = ['europe', 'asie', 'afrique', 'amerique', 'oceanie'];
+        continentIds.forEach(function(continentId) {
+            var continentEl = svgDoc.getElementById(continentId);
+            var paths = continentEl.querySelectorAll('.cls-1'); // Sélection de tous les chemins dans le continent
+
+            // Gestionnaire de survol
+            continentEl.addEventListener('mouseover', function() {
+                if (selectedContinent !== continentEl) {
+                    paths.forEach(function(path) {
+                        path.style.fill = hoverColor;
+                    });
+                }
+            });
+
+            // Gestionnaire de sortie de survol
+            continentEl.addEventListener('mouseout', function() {
+                paths.forEach(function(path) {
+                    if (!path.classList.contains('continent-selected')) {
+                        path.style.fill = originalColor;
+                    }
+                });
+            });
+
+            // Gestionnaire de clic
+            continentEl.addEventListener('click', function() {
+                hideAllSectionsAndResetContinents();
+                document.getElementById('info-' + continentId).style.display = 'block';
+                paths.forEach(function(path) {
+                    path.style.fill = selectedColor;
+                    path.classList.add('continent-selected');
+                });
+                selectedContinent = continentEl; // Mettre à jour le continent sélectionné
+
+                var nextSection = svgObject.closest('section').nextElementSibling;
+
+                // Faire défiler jusqu'à la prochaine section
+                if (nextSection) {
+                    nextSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            
+            });
+        });
+    });
+});
+
+
+
+
+
+
+
+
+
+
+//Carousel 
+
+let items = document.querySelectorAll('.slider .list .item');
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
+let thumbnails = document.querySelectorAll('.thumbnail .item');
+
+// config param
+let countItem = items.length;
+let itemActive = 0;
+// event next click
+next.onclick = function(){
+    itemActive = itemActive + 1;
+    if(itemActive >= countItem){
+        itemActive = 0;
+    }
+    showSlider();
+}
+//event prev click
+prev.onclick = function(){
+    itemActive = itemActive - 1;
+    if(itemActive < 0){
+        itemActive = countItem - 1;
+    }
+    showSlider();
+}
+
+function showSlider(){
+    // remove item active old
+    let itemActiveOld = document.querySelector('.slider .list .item.active');
+    let thumbnailActiveOld = document.querySelector('.thumbnail .item.active');
+    itemActiveOld.classList.remove('active');
+    thumbnailActiveOld.classList.remove('active');
+
+    // active new item
+    items[itemActive].classList.add('active');
+    thumbnails[itemActive].classList.add('active');
+
+}
+
+// click thumbnail
+thumbnails.forEach((thumbnail, index) => {
+    thumbnail.addEventListener('click', () => {
+        itemActive = index;
+        showSlider();
+    })
+})
+
+
+
+  
+
+
 
 
 
