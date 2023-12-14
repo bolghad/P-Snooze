@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <section>
-    <h1 class="text-center animate-de-haut" style="margin-top: 100px;">Détails des troubles du sommeil</h1>
+    <h1 class="text-center animate-de-haut" style="margin-top: 100px; font-family: 'Portofino';">Détails des troubles du sommeil</h1>
     <ul class="nav list-unstyled animate-de-gauche">
         <li class="nav-item">
             <a class="nav-link trouble-link" id="boutonTrouble1">Insomnie</a>

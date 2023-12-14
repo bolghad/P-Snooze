@@ -14,8 +14,18 @@
 
     <!-- Lien vers le fichier CSS global -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- ... autres balises head ... -->
     <style>
+        @font-face {
+            font-family: 'Portofino';
+            src: url('<?php echo get_template_directory_uri(); ?>/font/Portofino-Bold.woff2') format('woff2'),
+                url('<?php echo get_template_directory_uri(); ?>/font/Portofino-Bold.woff') format('woff'),
+                url('<?php echo get_template_directory_uri(); ?>/font/Portofino-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+}
        /* body{
             cursor: url('<?php echo get_template_directory_uri(); ?>/img/icone.png')
             1 1,
@@ -32,6 +42,8 @@
         background: url('<?php echo get_template_directory_uri(); ?>/img/icone.png') no-repeat;
         background-size: cover;
     }
+
+
     </style>
     <?php wp_head(); ?> 
 </head>
@@ -52,12 +64,12 @@
                     <div class="dropdown">
                         <button class="header-button">Conseils</button>
                         <div class="dropdown-content">
-                            <a href="<?php echo get_template_directory_uri(); ?>/troubles">Troubles</a>
+                            <a href="<?php echo get_template_directory_uri(); ?>/troubles" >Troubles</a>
                             <a href="<?php echo get_template_directory_uri(); ?>/guides">Guides</a>
                         </div>
                     </div>
                     <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/carte">Carte</a>
-                    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/professionnels">Professionnels</a>
+                    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/professionnels" style="font-family: 'Montserrat', sans-serif;">Professionnels</a>
                 </div>
                 <!-- Logo (visible sur desktop) -->
                 <div id="logo-container">
