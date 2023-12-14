@@ -1,31 +1,40 @@
+.porto{
+  font-family: Portofino;
+}
+
+.mont{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.montMed{
+  font-family: 'Montserrat', medium;
+}
 
 body {
-  background: linear-gradient(to bottom, #a1acb7, #b29481);
   transition: background 3s;
 }
 .main-content{
   margin-top: 10%;
   min-height: 100vh;
+  color: #0E2338;
 }
-/* Portofino Bold */
-.portofino-bold {
-  font-family: 'PortofinoBold', sans-serif;
-  /* Remplacez 'PortofinoBold' par la police réelle que vous utilisez */
-  font-weight: bold; /* Assurez-vous que la police spécifiée est en gras */
+h1{
+  font-size: 2.5em;
+  color: #0e2338;
+  font-family: Portofino;
 }
-
-/* Montserrat Regular */
-.montserrat-regular {
-  font-family: 'MontserratRegular', sans-serif;
-  /* Remplacez 'MontserratRegular' par la police réelle que vous utilisez */
-  font-weight: normal; /* Assurez-vous que la police spécifiée est normale (non grasse) */
+h2{
+  font-size: 2.5em;
 }
 
-/* Montserrat Medium */
-.montserrat-medium {
-  font-family: 'MontserratMedium', sans-serif;
-  /* Remplacez 'MontserratMedium' par la police réelle que vous utilisez */
-  font-weight: 500; /* Assurez-vous que la police spécifiée a un poids moyen (medium) */
+.first{
+  margin-top: 20%;
+}
+
+@media screen and (min-width: 1200px){
+  .first{
+    margin-top: 13%;
+  }
 }
 
 
@@ -35,13 +44,10 @@ body {
     text-decoration: none; /* Supprimer le soulignement des liens */
     background: none; /* Supprimer l'arrière-plan */
     border: none; /* Supprimer les bordures */
-    color: #000; /* Couleur du texte noir */
+    color: #0E2338; /* Couleur du texte noir */
     font-size: 18px; /* Taille de police plus grande */
     margin: 5px; /* Espacement entre les boutons */
 }
-
-
-
 
 
 
@@ -51,7 +57,7 @@ body {
 }
 
 .header-button:hover {
-    color: rgb(192, 173, 143); /* Couleur du texte au survol */
+    color: #a1acb7; /* Couleur du texte au survol */
 }
 
 
@@ -122,8 +128,8 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: rgba(5, 16, 26, 0.8);
-  color: #eff0df;
+  background-color: rgba(14, 35, 56, 0.85);
+  color: #ffffff;
 }
 
 .dropdown:hover .dropdown-content {
@@ -284,7 +290,7 @@ body {
     transform: translateY(-50%);
     width: 15px;
     height: 60vh; /* 60% de la hauteur de l'écran */
-    background-color: rgb(239, 224, 190);
+    background-color: #e5dbd5;
     border-radius: 10px; /* Arrondir les bords */
 }
 
@@ -301,12 +307,16 @@ body {
   }
 
 #current-time {
+  font-size: 1.1em;
+    color:#0E2338;
     position: absolute;
     top: 0;
     right: 0;
     transform: translate(100%, 0);
     padding: 10px;
+    font-family: Montserrat;
 }
+
 
 
 
@@ -328,14 +338,22 @@ body {
 }
 
 #deuxiemeSection img {
-  width: 80%;
-  margin:10%;
-  height: auto;
+  width: 90%;
+  margin:5%;
+  height: 80%;
 }
 
 
 .image-container {
+  object-fit: cover;
   position: relative;
+  font-size: 2.2em;
+}
+
+@media screen and (min-width: 780px) and (max-width: 1408px) {
+  .image-container {
+    font-size: 1.2em;
+  }
 }
 
 .image-container:hover .overlay-square {
@@ -346,29 +364,35 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10%;
+  margin: 5%;
   position: absolute;
-  bottom: 0;
+  bottom: 14.1%;
   left: 0;
-  width: 80%;
+  width: 90%;
   height: 15%;
   pointer-events: none; /* Assurez-vous que le carré n'interfère pas avec les interactions utilisateur sur l'image */
 }
 
 .overlay-Un{
-  background-color: rgba(230, 217, 163, 0.5); /* 50% d'opacité en noir */
+  background-color: rgba(255, 255, 255, 0.7); /* 50% d'opacité en noir */
+  color: #0e2338;
 }
 .overlay-Deux{
-  background-color: rgba(224, 223, 144, 0.5); /* 50% d'opacité en noir */
+  background-color: rgba(255, 238, 223, 0.7); /* 50% d'opacité en noir */
+  color: #b29481;
 }
 .overlay-Trois{
-  background-color: rgba(45, 41, 68, 0.5); /* 50% d'opacité en noir */
+  background-color: rgba(154, 137, 167, 0.7); /* 50% d'opacité en noir */
+  color: #ded8e2;
 }
 
 
 
 /* Media query pour les écrans de moins de 780px de large */
 @media screen and (max-width: 780px) {
+  #current-time {
+    font-size: 0.8em;
+  }
   #deuxiemeSection .col-4 {
     width: 100%;
     margin: 0; /* Supprimer toutes les marges */
@@ -376,10 +400,14 @@ body {
   }
 
   #deuxiemeSection img {
-    width: 80%;
-    height: 30vh; /* Utiliser une valeur relative pour définir la hauteur */
+    width: 90%;
+    height: 40vh; /* Utiliser une valeur relative pour définir la hauteur */
     object-fit: cover;
   }
+  .overlay-square {
+    bottom: 0;
+  }
+
 }
 
 
@@ -393,15 +421,14 @@ body {
   width: 100%;
   padding: 50px 0;
   color: #f0f9ff;
-  background-color: #282d32;
+  background-color: #0e2338;
 }
 
   
   .footer-dark h3 {
     margin-top:0%;
     margin-bottom:12px;
-    font-weight:bold;
-    font-size:16px;
+    font-size:1.5em;
   }
   
   .footer-dark ul {
@@ -458,11 +485,11 @@ body {
   .footer-dark .item.social > a {
     font-size:20px;
     width:36px;
-    height:36px;
-    line-height:36px;
+    height:auto;
+    line-height:30px;
     display:inline-block;
     text-align:center;
-    border-radius:50%;
+    border-radius:30%;
     box-shadow:0 0 0 1px rgba(255,255,255,0.4);
     margin:0 8px;
     color:#fff;
@@ -488,6 +515,8 @@ body {
 
 
 /* Styles CSS */
+
+
 .nav {
   width: 350px;
   list-style: none;
@@ -511,7 +540,7 @@ body {
 .nav-link {
   padding-top: 0%;
   text-decoration: none;
-  color: #000;
+  color: #0E2338;
   display: block; /* Affiche les boutons les uns en dessous des autres */
   position: relative; /* Ajoutez une position relative pour l'élément parent */
 }
@@ -523,7 +552,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #050118;
+  background-color: #0e2338;
   z-index: -1; /* Placez-le en arrière-plan derrière le texte */
   border-radius: 50px;
 }
@@ -544,7 +573,7 @@ body {
   padding-bottom: 1%;
   padding-top: 1%;
   margin-bottom: 2%;
-  color: #eff0df;
+  color: #ffffff;
   transition: width 3s;
 }
 
@@ -570,7 +599,7 @@ body {
 .trouble-link {
   text-decoration: none; /* Supprimer le soulignement du lien */
   cursor: pointer; /* Définir le curseur sur pointer */
-  color: #333; /* Couleur du texte normale */
+  color: #0E2338;
 }
 
 .text-article {
@@ -667,6 +696,8 @@ body {
     }
 
     */
+
+  
     .nav{
       margin-left: 8%;
     }
@@ -706,11 +737,15 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   margin: 3%;
-  height: 20vh;
+  height: 25vh;
   padding: 2%;
 }
 
-
+@media (max-width: 781px) {
+.carré {
+  height: 20vh;
+}
+}
 
 /*
 animation des articles 
@@ -860,7 +895,14 @@ animation des articles
 .slider .list .item .content h2{
   font-size: 100px;
   margin: 0;
+  font-family: Portofino;
 }
+
+.slider .list .item .content p{
+
+  font-family: Montserrat;
+}
+
 .slider .list .item.active{
   opacity: 1;
   z-index: 10;
@@ -923,6 +965,8 @@ animation des articles
   width: 0;
 }
 .thumbnail .item{
+  font-size: 1.3em;
+  color: #ffffff;
   width: 150px;
   height: 180px;
   filter: brightness(.5);
@@ -941,6 +985,7 @@ animation des articles
 .thumbnail .item .content{
   position: absolute;
   inset: auto 10px 10px 10px;
+  font-family: Montserrat;
 }
 @media screen and (max-width: 781px) {
   .thumbnail{

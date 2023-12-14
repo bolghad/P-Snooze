@@ -142,9 +142,9 @@ document.addEventListener('DOMContentLoaded', function () {
         var svgDoc = svgObject.contentDocument;
 
         // Définir les couleurs
-        var hoverColor = '#f0e2a8';
-        var selectedColor = '#08071d';
-        var originalColor = '#0f2338'; // La couleur originale définie par .cls-1
+        var hoverColor = '#e5dbd5';
+        var selectedColor = '#ffffff';
+        var originalColor = '#0e2338'; // La couleur originale définie par .cls-1
 
         var selectedContinent = null; // Pour garder une trace du continent sélectionné
 
@@ -171,6 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Gestionnaire de survol
             continentEl.addEventListener('mouseover', function() {
+                continentEl.style.cursor = 'pointer';
                 if (selectedContinent !== continentEl) {
                     paths.forEach(function(path) {
                         path.style.fill = hoverColor;

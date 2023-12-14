@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-<section>
-    <h1 class="text-center animate-de-haut" style="margin-top: 100px;">Conseils pour un sommeil réparateur</h1>
-    <ul class="nav list-unstyled animate-de-gauche">
+<section class="first">
+    <h1 class="text-center animate-de-haut">Conseils pour un sommeil réparateur</h1>
+    <ul class="nav list-unstyled animate-de-gauche mont">
         <li class="nav-item">
             <a class="nav-link trouble-link" id="boutonGuides1">Environnement propice au sommeil</a>
         </li>
@@ -17,7 +17,7 @@
         <!-- Ajoutez d'autres boutons si nécessaire -->
     </ul>
 </section>
-<section class="main-content">
+<section class="main-content mont">
 
     <!-- Contenu des articles -->
     <section id="articleGuides1" class="article">

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.6 64.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="facebook">
+    <path class="cls-1" d="m48.3,0H16.3C7.3,0,0,7.3,0,16.3v32c0,9,7.3,16.3,16.3,16.3h32c9,0,16.3-7.3,16.3-16.3V16.3c0-9-7.4-16.3-16.3-16.3Zm-5.2,18.4h-3.8c-2.1,0-4.3,1.3-4.3,3.6v6.2h7.8l-1.3,8.2h-6.5v20.3h-8.8v-20.3h-7.4v-8.2h7.4v-6.1c0-6.1,3.6-11.2,10.1-10.8l6.8.3s0,6.8,0,6.8Z"/>
+  </g>
+</svg>

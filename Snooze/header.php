@@ -56,7 +56,7 @@
     </div>
 
 <!-- En-tête -->
-<header class="fixed-top animate-de-haut" id="site-header">
+<header class="fixed-top animate-de-haut mont" id="site-header">
     <div class="container">
             <div class="header-content">
                 <!-- Boutons de gauche (visible sur desktop) -->
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/carte">Carte</a>
-                    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/professionnels" style="font-family: 'Montserrat', sans-serif;">Professionnels</a>
+                    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/professionnels">Professionnels</a>
                 </div>
                 <!-- Logo (visible sur desktop) -->
                 <div id="logo-container">

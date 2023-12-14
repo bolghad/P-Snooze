@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section class="main-content">
-    <h1 class="text-center animate-de-haut">Cliquez sur un continent!</h1>
+    <h1 class="text-center animate-de-haut porto">Cliquez sur un continent!</h1>
     <div class="carte-container animate-de-bas">
         <!-- Remplacer 'path/to/your/svgfile.svg' par le chemin réel vers votre fichier SVG -->
         <object type="image/svg+xml" data="<?php echo get_template_directory_uri(); ?>/img/Carte.svg" id="carte-du-monde"></object>
