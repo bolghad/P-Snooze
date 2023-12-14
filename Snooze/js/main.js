@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function generateGradient() {
     const now = new Date();
     //const hour = now.getHours();
-    const hour =1;
+    const hour =10;
 
 
 
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const progressHeight = loadingBar.style.height;
     const currentTimeHeight = (parseInt(progressHeight) - 5) + '%'; // Décalage de 3%
 
-    currentTimeDisplay.innerText = `${hours}:${minutes}`;
+    currentTimeDisplay.innerText = `${hours}h${minutes}`;
     currentTimeDisplay.style.top = currentTimeHeight;
 });
 
