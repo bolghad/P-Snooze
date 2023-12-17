@@ -18,6 +18,65 @@
 
     <!-- ... autres balises head ... -->
     <style>
+
+
+
+            /* Style du conteneur du bouton */
+            .bouton-container {
+                display: flex;
+                justify-content: center; /* Centrer horizontalement */
+                align-items: flex-start; /* Aligner le bouton en haut de la page */
+                height: 50vh; /* Hauteur de l'écran */
+                margin-top: 5%;
+            }
+
+        /* Style du bouton */
+        .bouton-image {
+            border: 2px solid rgb(14, 35, 56);
+            outline: none;
+            width: 350px; /* Largeur du bouton */
+            height: 80px; /* Hauteur du bouton */
+            position: relative; /* Ajoute une position relative */
+            text-align: center;
+            line-height: 75px; /* Centrer le texte verticalement */
+            color: white; /* Couleur du texte */
+            font-size: 18px; /* Taille de police du texte */
+            text-decoration: none; /* Supprime le soulignement du lien par défaut */
+            display: inline-block;
+            background-color: #0e3338;
+            border-radius: 50px;
+            overflow: hidden; /* Masque tout ce qui dépasse de la zone du bouton */
+            cursor: pointer; /* Affiche un curseur de type "main" pour indiquer que le bouton est cliquable */
+        }
+
+        /* Style de la couche d'arrière-plan avec l'image */
+        .bouton-image::before {
+            outline: none;
+            content: "";
+            position: absolute; /* Position absolue par rapport au parent (.bouton-image) */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('<?php echo get_template_directory_uri(); ?>/img/nuage2.svg'); /* Image de fond */
+            background-size: 100% auto; /* Ajuster l'image en largeur pour couvrir la zone du bouton et en hauteur en fonction de son aspect ratio */
+            background-repeat: no-repeat; /* Empêcher la répétition de l'image */
+            background-position: center 10%; /* Centrer l'image horizontalement et positionner à 30% du haut */
+            transform: translateX(-80%); /* Déplacer l'image complètement hors de la vue initialement */
+            transition: transform 1.5s ease; /* Transition pour l'effet de déplacement (augmentation du temps à 1 seconde) */
+        }
+
+      /* Style au survol du bouton */
+.bouton-image:hover::before {
+    transform: translateX(25%); /* Déplacer l'image de fond à sa position initiale au survol */
+    outline: none; /* Supprime le style de survol par défaut du navigateur */
+}
+
+
+
+
+
+
         @font-face {
             font-family: 'Portofino';
             src: url('<?php echo get_template_directory_uri(); ?>/font/Portofino-Bold.woff2') format('woff2'),
@@ -31,6 +90,8 @@
             1 1,
             auto;          
         }  */
+
+        
         #loading-bar::after {
             content: '';
         position: absolute;
@@ -62,7 +123,7 @@
                 <!-- Boutons de gauche (visible sur desktop) -->
                 <div class="header-buttons-left">
                     <div class="dropdown">
-                        <button class="header-button">Conseils</button>
+                        <button class="header-button">⏷Conseils</button>
                         <div class="dropdown-content">
                             <a href="<?php echo get_template_directory_uri(); ?>/troubles" >Troubles</a>
                             <a href="<?php echo get_template_directory_uri(); ?>/guides">Guides</a>
@@ -80,7 +141,7 @@
                 <!-- Boutons de droite (visible sur desktop) -->
                 <div class="header-buttons-right">
                     <div class="dropdown">
-                        <button class="header-button">Journal</button>
+                        <button class="header-button">⏷Journal</button>
                         <div class="dropdown-content">
                             <a href="<?php echo get_template_directory_uri(); ?>/dashboard">Dashboard</a>
                             <a href="<?php echo get_template_directory_uri(); ?>/carnet">Carnet</a>

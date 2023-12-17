@@ -3,7 +3,7 @@
     <h1 class="text-center animate-de-haut">Détails des troubles du sommeil</h1>
     <ul class="nav list-unstyled animate-de-gauche">
         <li class="nav-item">
-            <a class="nav-link trouble-link" id="boutonTrouble1">Insomnie</a>
+            <a class="nav-link trouble-link active" id="boutonTrouble1">Insomnie</a>
         </li>
         <li class="nav-item">
             <a class="nav-link trouble-link" id="boutonTrouble2">Apnée du sommeil</a>
@@ -25,7 +25,7 @@
 <section class="main-content mont">
 
     <!-- Contenu des articles -->
-    <section id="articleTrouble1" class="article">
+    <div id="articleTrouble1" class="article active">
 
                 <h2>Insomnie</h2>
 
@@ -49,10 +49,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
 
-    <section id="articleTrouble2" class="article">
+    <div id="articleTrouble2" class="article">
 
     <h2>Apnée du sommeil</h2>
 
@@ -76,9 +76,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="articleTrouble3" class="article">
+    <div id="articleTrouble3" class="article">
 
     <h2>Syndrome des jambes sans repos</h2>
 
@@ -102,9 +102,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="articleTrouble4" class="article">
+    <div id="articleTrouble4" class="article">
 
     <h2>Narcolepsie</h2>
 
@@ -128,9 +128,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="articleTrouble5" class="article">
+    <div id="articleTrouble5" class="article">
 
     <h2>Troubles du sommeil paradoxal</h2>
 
@@ -154,6 +154,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </section>
 <?php get_footer(); ?>

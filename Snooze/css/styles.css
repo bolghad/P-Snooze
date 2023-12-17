@@ -1,3 +1,5 @@
+
+
 .porto{
   font-family: Portofino;
 }
@@ -14,26 +16,26 @@ body {
   transition: background 3s;
 }
 .main-content{
-  margin-top: 10%;
+  margin-top: 5%;
   min-height: 100vh;
   color: #0E2338;
 }
 h1{
-  font-size: 2.5em;
+  font-size: 2.2em;
   color: #0e2338;
   font-family: Portofino;
 }
 h2{
-  font-size: 2.5em;
+  font-size: 2.1em;
 }
 
 .first{
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 @media screen and (min-width: 1200px){
   .first{
-    margin-top: 13%;
+    margin-top: 8%;
   }
 }
 
@@ -52,6 +54,7 @@ h2{
 
 
 #site-header{
+  position: relative;
   background-color: rgba(255, 255, 255, 0.85);
   padding-bottom: 3vh;
 }
@@ -62,14 +65,24 @@ h2{
 
 
 #logo {
+    position: absolute;
+    left: 50%;
+    top: 50%; /* Ajout pour aligner verticalement */
+    transform: translate(-50%, -50%);
     width: 10vw;
     display: inline-block;
     vertical-align: middle;
-
 }
+
 #logo-container {
     text-align: center;
 }
+
+
+
+
+
+
 
 
 
@@ -204,6 +217,12 @@ h2{
 }
 
 
+.header-buttons-left,
+.header-buttons-right {
+  display: flex;
+  gap: 15px;
+}
+
 /* Affichez le menu burger et le logo sur mobile avec une media query */
 @media screen and (max-width: 780px) {
   /* Cacher le menu desktop */
@@ -307,6 +326,7 @@ h2{
   }
 
 #current-time {
+  text-shadow: #ffffff 0px 1px 15px;
   font-size: 1.1em;
     color:#0E2338;
     position: absolute;
@@ -865,6 +885,7 @@ animation des articles
   overflow: hidden;
   opacity: 0;
   transition: .5s;
+  border-radius: 10px;
 }
 .slider .list .item img{
   border-radius: 10px;
@@ -899,7 +920,7 @@ animation des articles
 }
 
 .slider .list .item .content p{
-
+  font-size: 0.9em;
   font-family: Montserrat;
 }
 
@@ -980,7 +1001,7 @@ animation des articles
   border-radius: 10px;
 }
 .thumbnail .item.active{
-  filter: brightness(1.5);
+  filter: brightness(0.9);
 }
 .thumbnail .item .content{
   position: absolute;
@@ -996,5 +1017,185 @@ animation des articles
   }
   .arrows{
       top: 10%;
+  }
+}
+
+
+
+/* Formulaire */
+.card {
+  background-color: rgba(255, 238, 223, 0.7);
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 10%;
+  padding: 20px;
+}
+.card-header {
+  font-size: 1.5rem;
+}
+.card-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-section {
+  flex: 1;
+}
+.form-control {
+  border-radius: 14px;
+  background-color: #ffffff;
+  color: rgba(14, 35, 56, 0.5);
+  width: 90%;
+}
+.form-control::placeholder {
+  color: rgba(14, 35, 56, 0.5);
+}
+.form-control:focus {
+  background-color: rgba(255, 238, 223, 0.5);
+}
+
+#inscription{
+  height: 50px;
+  line-height: 50px;
+}
+@media (min-width: 992px) {
+  .image-section {
+      display: block;
+  }
+  
+}
+
+@media (max-width: 781px) {
+  #inscription{
+    height: 60px;
+    line-height: 60px;
+    width: 88%;
+  }
+.card{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+}
+
+/* Professionnels */
+
+.medecin-container {
+  background-color: rgba(255, 238, 223, 0.7);
+  border-radius: 15px; /* Arrondir les coins du conteneur */
+  padding: 20px;
+}
+
+.medecin-card {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.medecin-image {
+  border-radius: 50%; /* Rendre l'image ronde */
+  width: 120px; /* Taille de l'image */
+  height: 120px; /* Taille de l'image */
+  object-fit: cover; /* Ajuster et couper l'image pour qu'elle remplisse le cadre */
+  margin-bottom: 15px;
+}
+
+.btn-contact {
+  background-color: #a94ec5; /* Couleur de Bootstrap pour les boutons */
+  border: none;
+  color: #0E2338;
+  padding: 10px 20px;
+  border-radius: 30px; /* Boutons arrondis */
+  text-decoration: none; /* Supprimer le soulignement des liens */
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.btn-contact:hover{
+  background-color: #cd8ce0;
+}
+/* Pour les petits écrans, assurez-vous que les images ne sont pas trop grandes */
+@media (max-width: 781px) {
+  .medecin-image {
+    width: 100px !important;
+    height: 100px !important;
+  }
+}
+
+
+
+
+/*pop up */
+
+.popup-container {
+  display: none;
+  position: fixed;
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+  background-color: #fff;
+  z-index: 1000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.popup-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.popup-header {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.popup-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.popup-text {
+  flex: 1;
+  /* Plus de styles pour le texte ici */
+}
+
+.popup-map {
+  flex: 1;
+  /* Plus de styles pour la carte ici */
+}
+
+.popup-info {
+  flex: 1;
+  text-align: center;
+  /* Plus de styles pour les informations ici */
+}
+
+.popup-info img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .popup-body {
+    flex-direction: column;
   }
 }

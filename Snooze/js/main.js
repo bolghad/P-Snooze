@@ -105,7 +105,7 @@ generateGradient();
 
 
 
-//page troubles et guides
+//page troubles et guides et pro
 
 // JavaScript
 document.addEventListener('DOMContentLoaded', function () {
@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Associe un gestionnaire d'événements à chaque bouton
     boutons.forEach(function (bouton, index) {
         bouton.addEventListener('click', function () {
+            
             // Retire la classe 'active' de tous les boutons et articles
             boutons.forEach(function (b) {
                 b.classList.remove('active');
@@ -142,8 +143,8 @@ document.addEventListener('DOMContentLoaded', function () {
         var svgDoc = svgObject.contentDocument;
 
         // Définir les couleurs
-        var hoverColor = '#e5dbd5';
-        var selectedColor = '#ffffff';
+        var hoverColor = '#42596f';
+        var selectedColor = '#e5dbd5';
         var originalColor = '#0e2338'; // La couleur originale définie par .cls-1
 
         var selectedContinent = null; // Pour garder une trace du continent sélectionné
@@ -213,6 +214,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+
+
+
+// Pop up professionnels 
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Afficher le pop-up
+    document.querySelectorAll('.btn-contact').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const targetId = btn.getAttribute('data-target');
+            const popup = document.querySelector(targetId);
+            popup.style.display = 'block';
+        });
+    });
+
+    // Fermer le pop-up
+    document.querySelectorAll('.close-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const popup = btn.closest('.popup-container');
+            popup.style.display = 'none';
+        });
+    });
+});
 
 
 
@@ -310,12 +335,6 @@ setupCarousel('info-oceanie');
 
 
   
-
-
-
-
-
-
 
 
 

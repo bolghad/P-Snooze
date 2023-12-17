@@ -3,7 +3,7 @@
     <h1 class="text-center animate-de-haut">Conseils pour un sommeil réparateur</h1>
     <ul class="nav list-unstyled animate-de-gauche mont">
         <li class="nav-item">
-            <a class="nav-link trouble-link" id="boutonGuides1">Environnement propice au sommeil</a>
+            <a class="nav-link trouble-link active" id="boutonGuides1">Environnement propice au sommeil</a>
         </li>
         <li class="nav-item">
             <a class="nav-link trouble-link" id="boutonGuides2">Etablir une routine de sommeil</a>
@@ -20,7 +20,7 @@
 <section class="main-content mont">
 
     <!-- Contenu des articles -->
-    <section id="articleGuides1" class="article">
+    <div id="articleGuides1" class="article active">
 
                 <h2 class="text-center">Environnement propice au sommeil</h2>
                 <div class="container text-center">
@@ -52,10 +52,10 @@
 
 
 
-    </section>
+    </div>
 
 
-    <section id="articleGuides2" class="article">
+    <div id="articleGuides2" class="article">
 
     <h2>Etablir une routine de sommeil</h2>
     <div class="container-fluid"> <!-- Remplacer 'container' par 'container-fluid' pour une largeur complète -->
@@ -79,9 +79,9 @@
             </div>
         </div>
 
-    </section>
+    </div>
 
-    <section id="articleGuides3" class="article">
+    <div id="articleGuides3" class="article">
 
         <h2 class="text-center">Alimentation et sommeil</h2>
                 <div class="container text-center">
@@ -111,9 +111,9 @@
                     </div>
                 </div>
 
-    </section>
+    </div>
 
-    <section id="articleGuides4" class="article">
+    <div id="articleGuides4" class="article">
 
     <h2>Gestion du stress et de l'anxiété</h2>
     <div class="container-fluid"> <!-- Remplacer 'container' par 'container-fluid' pour une largeur complète -->
@@ -136,7 +136,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
 
 </section>

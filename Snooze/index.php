@@ -1,8 +1,11 @@
 <?php get_header(); ?>
 
 <!-- Contenu de la page -->
-<section id="premier" style="height:70vh">
-
+<section class="first" style="max-height:50vh">
+    <h1 class="text-center animate-de-haut">Dormez paisiblement avec</h1>
+    <div class="bouton-container animate-de-droite">
+            <a class="bouton-image mont" type="button" href="#form">Inscription</a>       
+    </div>
 </section>
 
 <!-- Section DeuxiemeSection -->
@@ -34,56 +37,71 @@
 
 
 
-<div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header bg-dark text-white text-center">
-                        CRÉEZ UN COMPTE
-                    </div>
-                    <div class="card-body">
-                        <form action="process-form.php" method="POST">
-                            <div class="form-group">
+
+
+
+
+
+<div id="form" class="container mt-5 mont">
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <div class="card">
+                <h3 class="text-center porto mt-4 mb-4">
+                    CRÉEZ UN COMPTE
+                </h3>
+                <div class="card-body">
+                    <div class="row">
+                        <!-- Première moitié du formulaire -->
+                        <div class="col-lg-4 col-md-6">
+                            <form action="process-form.php" method="POST">
                                 <label for="name">Nom*</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Entrez votre nom" required>
-                            </div>
-                            <div class="form-group">
+                                <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Entrez votre nom" required>
                                 <label for="email">E-mail*</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Entrez votre e-mail" required>
-                            </div>
-                            <div class="form-group">
+                                <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Entrez votre e-mail" required>
                                 <label for="password">Mot de passe*</label>
                                 <input type="password" class="form-control" id="password" name="password" placeholder="Entrez votre mot de passe" required>
-                            </div>
-                            <div class="form-group">
+                            </form>
+                        </div>
+
+                        <!-- Deuxième moitié du formulaire -->
+                        <div class="col-lg-4 col-md-6">
+                            <form action="process-form.php" method="POST">
                                 <label for="locality">Localité*</label>
-                                <input type="text" class="form-control" id="locality" name="locality" placeholder="Entrez votre commune" required>
-                            </div>
-                            <div class="form-group">
+                                <input type="text" class="form-control mb-3" id="locality" name="locality" placeholder="Entrez votre commune" required>
                                 <label for="age">Âge*</label>
-                                <input type="text" class="form-control" id="age" name="age" placeholder="jj/mm/aaaa" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="objective">Objectif*</label>
+                                <input type="text" class="form-control mb-3" id="age" name="age" placeholder="jj/mm/aaaa" required>
+                                <label for="objective">Objectif</label>
                                 <select class="form-control" id="objective" name="objective" required>
-                                    <option>Choisissez parmi la liste</option>
-                                    <!-- Options de l'objectif ici -->
+                                    <option>Gérer son temps de sommeil</option>
+                                    <option>Dormir plus longtemps</option>
+                                    <option>Ne plus se réveiller la nuit</option>
+                                    
                                 </select>
-                            </div>
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="terms" required>
-                                <label class="form-check-label" for="terms">J'accepte les termes et conditions d'utilisation</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">S'INSCRIRE</button>
-                        </form>
-                    </div>
-                    <div class="card-footer text-muted text-center">
-                        Déjà un compte ? <a href="#" class="text-dark">Connecte toi</a>
+                            </form>
+                        </div>
+
+                        <!-- Colonne pour l'image -->
+                        <div class="col-lg-4 col-md-12 d-none d-lg-block">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/pc.jpg" alt="Image Description" class="img-fluid">
+                        </div>
                     </div>
                 </div>
+                <div class="row">
+                        <div class="col-lg-8 col-md-12 text-center">
+                            <button type="submit" id="inscription" class="mt-4 mb-2 bouton-image">S'INSCRIRE</button>
+                            <div class=" col-lg-8card-footer text-muted text-center">
+                                Déjà un compte ? <a href="#" class="text-primary">Connecte toi</a>
+                            </div>
+                        </div>
+                    </div>
+                
             </div>
         </div>
     </div>
+</div>
+
+
+
 
 
 <?php get_footer(); ?>
