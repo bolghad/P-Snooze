@@ -335,11 +335,3 @@ setupCarousel('info-oceanie');
 
 
   
-
-
-
-
-
-
-
-

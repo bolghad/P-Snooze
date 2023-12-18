@@ -80,7 +80,15 @@ h2{
 
 
 
+.header-button .rotate {
+  display: inline-block;
+  transition: transform 0.7s ease; /* Durée de la transition de 0.5 secondes */
+  padding-right: 5px;
+}
 
+.header-button:hover .rotate {
+  transform: rotate(90deg); /* Rotation de 90 degrés */
+}
 
 
 

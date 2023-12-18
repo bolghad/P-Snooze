@@ -123,7 +123,7 @@
                 <!-- Boutons de gauche (visible sur desktop) -->
                 <div class="header-buttons-left">
                     <div class="dropdown">
-                        <button class="header-button">⏷Conseils</button>
+                        <button class="header-button"><span class="rotate">⮞</span>Conseils</button>
                         <div class="dropdown-content">
                             <a href="<?php echo get_template_directory_uri(); ?>/troubles" >Troubles</a>
                             <a href="<?php echo get_template_directory_uri(); ?>/guides">Guides</a>
@@ -141,7 +141,7 @@
                 <!-- Boutons de droite (visible sur desktop) -->
                 <div class="header-buttons-right">
                     <div class="dropdown">
-                        <button class="header-button">⏷Journal</button>
+                        <button class="header-button"><span class="rotate">⮞</span>Journal</button>
                         <div class="dropdown-content">
                             <a href="<?php echo get_template_directory_uri(); ?>/dashboard">Dashboard</a>
                             <a href="<?php echo get_template_directory_uri(); ?>/carnet">Carnet</a>
@@ -170,7 +170,7 @@
 
 <!-- Logo (visible sur mobile) -->
 <div id="mobile-logo-container">
-    <a href="<?php echo get_template_directory_uri(); ?>/index">
+    <a href="<?php echo home_url(); ?>">
         <img id ="logo-mobile" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo Snooze" id="mobile-logo">
     </a>
 </div>
