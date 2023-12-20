@@ -109,6 +109,10 @@ generateGradient();
 
 // JavaScript
 document.addEventListener('DOMContentLoaded', function () {
+
+
+
+    
     // Récupère tous les boutons et articles
     var boutons = document.querySelectorAll('.nav-link');
     var articles = document.querySelectorAll('.article');
@@ -209,6 +213,39 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     });
+});
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Vérifiez si le modal a déjà été affiché durant cette session
+    if (!sessionStorage.getItem('modalShown')) {
+        $('#modalCookies').modal({
+            backdrop: false, // Désactive le fond sombre
+            keyboard: false, // Désactive la fermeture avec la touche ESC
+            focus: true // Focus sur le modal
+        });
+        $('#modalCookies').modal('show');
+
+        // Marquez que le modal a été affiché pour cette session
+        sessionStorage.setItem('modalShown', 'true');
+    }
+
+    // Vérifiez si le modal a été accepté/refusé dans le passé
+    if (localStorage.getItem('modalAcceptedOrRefused')) {
+        // Ne pas montrer le modal
+        return;
+    }
+});
+
+// Pour fermer le modal après acceptation ou refus
+$('.btn-secondary, .btn-primary').click(function(){
+    $('#modalCookies').modal('hide');
+    // Marquez que le modal a été accepté ou refusé
+    localStorage.setItem('modalAcceptedOrRefused', 'true');
 });
 
 

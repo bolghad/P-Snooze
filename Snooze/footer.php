@@ -40,6 +40,33 @@
         </footer>
     </div>
 
+
+
+
+
+<!-- cookies -->
+<div class="modal fade mont" id="modalCookies" tabindex="-1" role="dialog" aria-labelledby="modalCookiesLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-bottom-right" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        Nous utilisons des cookies pour améliorer votre expérience. En continuant à visiter ce site, vous acceptez notre utilisation des cookies.
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-lg mont" data-dismiss="modal">Conditions</button>
+        <button type="button" class="btn btn-secondary btn-lg mont" data-dismiss="modal">Décliner</button>
+        <button type="button" class="btn btn-primary btn-lg mont" data-dismiss="modal">Accepter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
     <!-- Lien vers la bibliothèque jQuery depuis un CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 

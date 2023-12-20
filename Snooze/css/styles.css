@@ -54,7 +54,7 @@ h2{
 
 
 #site-header{
-  position: relative;
+  position: fixed;
   background-color: rgba(255, 255, 255, 0.85);
   padding-bottom: 3vh;
 }
@@ -1205,5 +1205,118 @@ animation des articles
 @media (max-width: 768px) {
   .popup-body {
     flex-direction: column;
+  }
+}
+
+
+
+/* Styles pour le modal de consentement des cookies */
+/* Positionnement en bas à droite de l'écran pour le modal */
+.modal-dialog-bottom-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* Pour assurer que le modal est au-dessus de tout le reste */
+.modal-dialog {
+  z-index: 1050;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+/* Dashboard */ 
+
+.user-profile, .sidebar-menu, .dashboard-header, .dashboard-content, .graph-section {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  margin-bottom: 50px;
+  color: #0E2338;
+}
+
+.user-profile, .dashboard-header{
+  margin-top: 30px;
+}
+
+.user-profile img{
+  width: 90px;
+  margin-top:-60px;
+}
+
+.dashboard-content {
+  height: 400px; /* Augmentez la hauteur selon les besoins */
+}
+
+.graph-section {
+  margin: 0 auto; /* Centre les divs si elles sont moins que le nombre prévu dans une rangée */
+  width: 28%;
+}
+
+.graph-placeholder {
+  border-radius: 5px;
+  height: 100px; /* Ajustez la hauteur selon vos besoins */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-menu button{
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid transparent; /* Ajouté solid et la largeur */
+  border-radius: 20px;
+}
+
+.sidebar-menu button:hover{
+  border: 1px solid #0E2338; /* Assure que le style et la largeur de la bordure sont définis */
+  border-radius: 20px;
+}
+
+.h3{
+  margin-left: 45%;
+}
+
+
+
+.my-form {
+  margin-top: 40px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.my-form select,
+.my-form input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.my-form button[type="submit"] {
+  border-radius: 30px;
+  padding: 5px 30px;
+  background-color: #0E2338;
+  color: white;
+  cursor: pointer;
+  margin-top: 5%;
+  margin-left: 25%;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .my-form button[type="submit"] {
+    margin-left: 0%;
+  }
+  .dashboard-content{
+    height: 70%;
+  }
+  .dashboard-header{
+    margin-top: -30px;
   }
 }

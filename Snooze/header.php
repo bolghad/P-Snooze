@@ -40,7 +40,7 @@
             text-align: center;
             line-height: 75px; /* Centrer le texte verticalement */
             color: white; /* Couleur du texte */
-            font-size: 18px; /* Taille de police du texte */
+            font-size: 20px; /* Taille de police du texte */
             text-decoration: none; /* Supprime le soulignement du lien par défaut */
             display: inline-block;
             background-color: #0e3338;
@@ -148,7 +148,7 @@
                             <a href="<?php echo get_template_directory_uri(); ?>/paramètres">Paramètres</a>
                         </div>
                     </div>
-                    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/connexion">Connexion</a>
+                    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/inscription">Connexion</a>
                     <div class="dropdown">
                         <button class="header-button">Fr</button>
                         <div class="dropdown-content">
