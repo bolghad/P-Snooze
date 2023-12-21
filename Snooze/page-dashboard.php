@@ -6,26 +6,26 @@
   <div class="row">
     <div class="col-12 col-md-2 offset-md-1">
       <!-- Profil -->
-      <div class="user-profile mb-3 p-3 text-center">
+      <div class="user-profile mb-3 p-3 text-center animate-de-gauche">
         <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" alt="Profil" class="img-fluid rounded-circle">
         <h4 class="mt-2 porto">ANNE DUBOIS</h4>
         <button class="btn">Modifier</button>
       </div>
       <!-- Menu -->
-      <div class="sidebar-menu p-3">
+      <div class="sidebar-menu p-3 animate-de-gauche">
         <button type="button" class="d-block p-2 mb-2">Dashboard <i class="icon-dashboard"></i></button>
         <button type="button" class="d-block p-2 mb-2">Carnet <i class="icon-carnet"></i></button>
         <button type="button" class="d-block p-2">Paramètres <i class="icon-parametres"></i></button>
       </div>
     </div>
-    <div class="col-12 col-md-8">
+    <div class="col-12 col-md-8 animate-de-haut">
       <!-- Header -->
       <div class="dashboard-header p-2 mb-3 d-flex justify-content-between text-center">
         <h1 class="h3 porto">JOURNAL</h1>
         <button class="btn">Notifications <i class="icon-notifications"></i></button>
       </div>
       <!-- Main Content -->
-      <div class="dashboard-content p-3 mb-3 pt-4">
+      <div class="dashboard-content p-3 mb-3 pt-4 animate-de-haut">
         <h3>Aidez-nous à mieux comprendre votre situation</h3>
         
         <div class="container my-form">
@@ -62,7 +62,7 @@
 
       </div>
       <!-- Graphiques -->
-      <div class="p-3">
+      <div class="p-3 animate-de-droite">
         <div class="row">
         <div class="graph-section col-12 col-md-4 p-4 mx-2">
             <div class="graph-placeholder">Graphique 1</div>

@@ -43,7 +43,7 @@
             font-size: 20px; /* Taille de police du texte */
             text-decoration: none; /* Supprime le soulignement du lien par défaut */
             display: inline-block;
-            background-color: #0e3338;
+            background-color: #0e2338;
             border-radius: 50px;
             overflow: hidden; /* Masque tout ce qui dépasse de la zone du bouton */
             cursor: pointer; /* Affiche un curseur de type "main" pour indiquer que le bouton est cliquable */
@@ -123,14 +123,20 @@
                 <!-- Boutons de gauche (visible sur desktop) -->
                 <div class="header-buttons-left">
                     <div class="dropdown">
+                   <!-- <?php wp_nav_menu([
+  'theme_location' => 'header-left', // localisation de mon menu
+  'container' => false, // permet de retirer mon container
+  'menu_class' => 'navbar-nav me-auto' // la classe que je veux dans mon <ul></ul>
+]); ?> -->
                         <button class="header-button"><span class="rotate">⮞</span>Conseils</button>
                         <div class="dropdown-content">
-                            <a href="<?php echo get_template_directory_uri(); ?>/troubles" >Troubles</a>
-                            <a href="<?php echo get_template_directory_uri(); ?>/guides">Guides</a>
+                       
+                            <a href="<?php echo home_url('troubles') ?>" >Troubles</a>
+                            <a href="<?php echo home_url('guides') ?>">Guides</a>
                         </div>
                     </div>
-                    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/carte">Carte</a>
-                    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/professionnels">Professionnels</a>
+                    <a class="header-button" href="<?php echo home_url('carte') ?>">Carte</a>
+                    <a class="header-button" href="<?php echo home_url('professionnels') ?>">Professionnels</a>
                 </div>
                 <!-- Logo (visible sur desktop) -->
                 <div id="logo-container">
@@ -143,12 +149,12 @@
                     <div class="dropdown">
                         <button class="header-button"><span class="rotate">⮞</span>Journal</button>
                         <div class="dropdown-content">
-                            <a href="<?php echo get_template_directory_uri(); ?>/dashboard">Dashboard</a>
-                            <a href="<?php echo get_template_directory_uri(); ?>/carnet">Carnet</a>
-                            <a href="<?php echo get_template_directory_uri(); ?>/paramètres">Paramètres</a>
+                            <a href="<?php echo home_url('dashboard') ?>">Dashboard</a>
+                            <a href="<?php echo home_url('carnet') ?>">Carnet</a>
+                            <a href="<?php echo home_url('parametres') ?>">Paramètres</a>
                         </div>
                     </div>
-                    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/inscription">Connexion</a>
+                    <a class="header-button" href="<?php echo home_url('connexion') ?>">Connexion</a>
                     <div class="dropdown">
                         <button class="header-button">Fr</button>
                         <div class="dropdown-content">
@@ -180,21 +186,21 @@
     <div class="dropdown">
         <button class="header-button">Conseils</button>
         <div class="dropdown-content">
-            <a href="<?php echo get_template_directory_uri(); ?>/troubles">Troubles</a>
-            <a href="<?php echo get_template_directory_uri(); ?>/guides">Guides</a>
+            <a href="<?php echo home_url('troubles') ?>">Troubles</a>
+            <a href="<?php echo home_url('guides') ?>">Guides</a>
         </div>
     </div>
-    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/carte">Carte</a>
-    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/professionnels">Professionnels</a>
+    <a class="header-button" href="<?php echo home_url('carte') ?>">Carte</a>
+    <a class="header-button" href="<?php echo home_url('professionnels') ?>">Professionnels</a>
     <div class="dropdown">
         <button class="header-button">Journal</button>
         <div class="dropdown-content">
-            <a href="<?php echo get_template_directory_uri(); ?>/dashboard">Dashboard</a>
-            <a href="<?php echo get_template_directory_uri(); ?>/carnet">Carnet</a>
-            <a href="<?php echo get_template_directory_uri(); ?>/paramètres">Paramètres</a>
+            <a href="<?php echo home_url('dashboard') ?>">Dashboard</a>
+            <a href="<?php echo home_url('carnet') ?>">Carnet</a>
+            <a href="<?php echo home_url('parametres') ?>">Paramètres</a>
         </div>
     </div>
-    <a class="header-button" href="<?php echo get_template_directory_uri(); ?>/connexion">Connexion</a>
+    <a class="header-button" href="<?php echo home_url('connexion') ?>">Connexion</a>
     <div class="dropdown">
         <button class="header-button">Fr</button>
         <div class="dropdown-content">

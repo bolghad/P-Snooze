@@ -71,10 +71,12 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 text-article article-texte-deux animate-de-gauche">
                 <p>L'établissement d'une routine de sommeil saine peut avoir un impact significatif sur votre qualité de vie. Dans cet article, nous vous fournirons des astuces et des conseils pratiques pour créer une routine de sommeil qui favorise un sommeil réparateur. Vous découvrirez l'importance de maintenir une heure de coucher régulière, de créer un espace de sommeil confortable et de pratiquer des rituels relaxants avant de dormir. En suivant ces étapes, vous pouvez améliorer la durée et la qualité de votre sommeil, ce qui contribuera à votre santé et à votre bien-être général.</p>
+                <div class="text-center">
+                        <a class="bouton-image mt-5 mb-5" href="<?php echo home_url('professionnels') ?>">Contactez un professionnel</a>
+                    </div>  
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 animate-de-droite">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/environnementDeux.jpg" alt="Image 2" class="img-fluid article-image-deux">
-                    <button class="bouton-contact">Contactez un professionnel de la santé</button>
                 </div>
             </div>
         </div>
@@ -129,10 +131,12 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 text-article article-texte-deux animate-de-gauche">
                 <p>La gestion du stress et de l'anxiété est cruciale pour maintenir un équilibre émotionnel et une meilleure qualité de vie. Dans cet article, nous partagerons des conseils pratiques pour vous aider à gérer efficacement le stress et l'anxiété. Vous découvrirez des techniques telles que la relaxation musculaire, la pratique de la pleine conscience, la planification du temps et l'adoption d'une alimentation équilibrée. En mettant en œuvre ces recommandations, vous pouvez réduire les effets négatifs du stress et de l'anxiété, favorisant ainsi une vie plus saine et plus épanouissante.</p>
+                <div class="text-center">
+                        <a class="bouton-image mt-5 mb-5" href="<?php echo home_url('professionnels') ?>">Contactez un professionnel</a>
+                    </div> 
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 animate-de-droite">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/stressDeux.jpg" alt="Image 2" class="img-fluid article-image-deux">
-                    <button class="bouton-contact">Contactez un professionnel de la santé</button>
                 </div>
             </div>
         </div>

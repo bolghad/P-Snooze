@@ -1,29 +1,29 @@
 
     <!-- Pied de page -->
-    <div class="footer-dark mont">
+    <div class="footer-dark mont animate-de-bas">
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-2 item" id="footOne">
                         <h3>Général</h3>
                         <ul>
-                            <li><a href="#">Conseils</a></li>
-                            <li><a href="#">Professionnels</a></li>
-                            <li><a href="#">Carte</a></li>
+                            <li><a href="<?php echo home_url('troubles') ?>">Conseils</a></li>
+                            <li><a href="<?php echo home_url('professionnels') ?>">Professionnels</a></li>
+                            <li><a href="<?php echo home_url('carte') ?>">Carte</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-2 item" id="footTwo">
                         <h3>Outil</h3>
                         <ul>
-                            <li><a href="#">Connexion</a></li>
-                            <li><a href="#">Journal</a></li>
-                            <li><a href="#">Mentions légales</a></li>
+                            <li><a href="<?php echo home_url('connexion') ?>">Connexion</a></li>
+                            <li><a href="<?php echo home_url('dashboard') ?>">Journal</a></li>
+                            <li><a href="<?php echo home_url('confidentialité') ?>">Mentions légales</a></li>
                         </ul>
                     </div>
                     <div class="col-md-5 item text" id="footThree">
                         <h3>A propos</h3>
                         <p>Snooze est un site web dédié au bien être et au sommeil. Il a été conçu par des étudiants de deuxième année de multimédia à Bruxelles. Notre objectif est d'améliorer la qualité du sommeil en informant et en conseillant les utilisateurs.</p>
-                        <h3>Contact</h3>
+                        <h3 class="pt-5">Contact</h3>
                         <a href="mailto:snooze@isfsc.be">snooze@isfsc.be</a>
                     </div>
                     <div class="col-md-3 item" id="footFour">
@@ -39,33 +39,6 @@
             </div>
         </footer>
     </div>
-
-
-
-
-
-<!-- cookies -->
-<div class="modal fade mont" id="modalCookies" tabindex="-1" role="dialog" aria-labelledby="modalCookiesLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-bottom-right" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
-        Nous utilisons des cookies pour améliorer votre expérience. En continuant à visiter ce site, vous acceptez notre utilisation des cookies.
-      </div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary btn-lg mont" data-dismiss="modal">Conditions</button>
-        <button type="button" class="btn btn-secondary btn-lg mont" data-dismiss="modal">Décliner</button>
-        <button type="button" class="btn btn-primary btn-lg mont" data-dismiss="modal">Accepter</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
 
     <!-- Lien vers la bibliothèque jQuery depuis un CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

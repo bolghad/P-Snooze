@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <!-- Début du formulaire de connexion -->
-<div id="login-form" class="container mt-5 mont">
+<section class="first">
+<div id="login-form" class="container mt-5 mont animate-de-bas">
     <div class="row">
         <div class="col-lg-12 col-md-12">
             <div class="card">
@@ -19,9 +20,9 @@
                                 <label for="password">Mot de passe*</label>
                                 <input type="password" class="form-control mb-3" id="password" name="password" placeholder="Entrez votre mot de passe" required>
                                 
-                                <button type="submit" id="login" class="mt-4 mb-2 bouton-image" name="login" style="width">SE CONNECTER</button>
+                                <a type="submit" id="connexion" class="mt-4 mb-2 bouton-image" name="login" style="width" href="<?php echo home_url('dashboard') ?>">SE CONNECTER</a>
                                 <div class="text-muted text-center">
-                                    Pas de compte ? <a href="#" class="text-primary">Inscrivez-vous</a>
+                                    Pas de compte ? <a href="<?php echo home_url('inscription') ?>" class="text-primary">Inscrivez-vous</a>
                                 </div>
                             </div>
 
@@ -36,4 +37,5 @@
         </div>
     </div>
 </div>
+</section>
 <?php get_footer(); ?>

@@ -42,10 +42,12 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 text-article article-texte-deux animate-de-gauche">
                     <p>Gérer l'insomnie implique souvent des changements de style de vie et de routine de sommeil. Des pratiques comme la méditation, le yoga, et l'établissement d'une routine de coucher régulière peuvent aider. Éviter les écrans avant de dormir, réduire la consommation de caféine, et créer un environnement de sommeil confortable sont également des stratégies clés. Pour les cas plus sévères, une consultation médicale peut s'avérer nécessaire pour identifier et traiter les causes sous-jacentes de l'insomnie</p>
+                    <div class="text-center">
+                        <a class="bouton-image mt-5 mb-5" href="<?php echo home_url('professionnels') ?>">Contactez un professionnel</a>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 animate-de-droite">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/insomnieUn.png" alt="Image 2" class="img-fluid article-image-deux">
-                    <button class="bouton-contact">Contactez un professionnel de la santé</button>
                 </div>
             </div>
         </div>
@@ -69,10 +71,12 @@
                 <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 text-article article-texte-deux animate-de-gauche">
                     <p>L'apnée du sommeil est un trouble du sommeil qui peut avoir un impact significatif sur la qualité de vie d'une personne. Les personnes atteintes d'apnée du sommeil éprouvent des interruptions fréquentes de la respiration pendant la nuit, ce qui les empêche d'obtenir un sommeil réparateur. Dans cet article, nous aborderons les causes, les symptômes et les traitements de l'apnée du sommeil, ainsi que les conseils pour améliorer la qualité du sommeil et favoriser une meilleure santé globale.</p>
+                    <div class="text-center">
+                        <a class="bouton-image mt-5 mb-5" href="<?php echo home_url('professionnels') ?>">Contactez un professionnel</a>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 animate-de-droite">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/ApneeDeux.jpg" alt="Image 2" class="img-fluid article-image-deux">
-                    <button class="bouton-contact">Contactez un professionnel de la santé</button>
                 </div>
             </div>
         </div>
@@ -95,10 +99,12 @@
                 <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 text-article article-texte-deux animate-de-gauche">
                 <p>Le syndrome des jambes sans repos est un trouble du sommeil qui peut considérablement affecter la qualité de vie d'une personne. Les sensations inconfortables et le besoin de bouger les jambes peuvent perturber le sommeil, entraînant une fatigue diurne et d'autres problèmes de santé. Dans cet article, nous aborderons en détail les caractéristiques du syndrome des jambes sans repos, les méthodes de diagnostic et les approches de traitement disponibles pour aider les individus à mieux gérer ce trouble et à retrouver un sommeil réparateur.</p>
+                <div class="text-center">
+                        <a class="bouton-image mt-5 mb-5" href="<?php echo home_url('professionnels') ?>">Contactez un professionnel</a>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 animate-de-droite">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/syndromeDeux.jpg" alt="Image 2" class="img-fluid article-image-deux">
-                    <button class="bouton-contact">Contactez un professionnel de la santé</button>
                 </div>
             </div>
         </div>
@@ -121,10 +127,12 @@
                 <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 text-article article-texte-deux animate-de-gauche">
                     <p>La narcolepsie est un trouble neurologique qui peut avoir un impact significatif sur la vie quotidienne d'une personne. Les épisodes soudains de somnolence diurne, la cataplexie et d'autres symptômes de la narcolepsie peuvent rendre les activités quotidiennes difficiles à accomplir. Dans cet article, nous examinons en détail la narcolepsie, ses mécanismes sous-jacents, les signes et les symptômes qui lui sont associés, ainsi que les options de traitement disponibles pour aider les personnes atteintes de narcolepsie à mieux gérer leur condition et à mener une vie épanouissante malgré ce trouble du sommeil.</p>
+                    <div class="text-center">
+                        <a class="bouton-image mt-5 mb-5" href="<?php echo home_url('professionnels') ?>">Contactez un professionnel</a>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 animate-de-droite">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/narcoDeux.jpg" alt="Image 2" class="img-fluid article-image-deux">
-                    <button class="bouton-contact">Contactez un professionnel de la santé</button>
                 </div>
             </div>
         </div>
@@ -147,10 +155,12 @@
                 <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 text-article article-texte-deux animate-de-gauche">
                 <p>Les troubles du sommeil paradoxal sont un groupe de conditions qui affectent la phase du sommeil REM (mouvement rapide des yeux). Cette phase est essentielle pour les rêves et la régulation émotionnelle. Les personnes atteintes de troubles du sommeil paradoxal peuvent éprouver des rêves intenses, des mouvements corporels incontrôlés et des périodes de paralysie au réveil. Dans cet article, nous examinons de plus près ces troubles, leurs manifestations cliniques, les facteurs de risque associés et les approches de traitement qui peuvent aider à améliorer la qualité du sommeil et à atténuer les symptômes.</p>
+                <div class="text-center">
+                        <a class="bouton-image mt-5 mb-5" href="<?php echo home_url('professionnels') ?>">Contactez un professionnel</a>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 animate-de-droite">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/paraDeux.jpg" alt="Image 2" class="img-fluid article-image-deux">
-                    <button class="bouton-contact">Contactez un professionnel de la santé</button>
                 </div>
             </div>
         </div>

@@ -319,6 +319,7 @@ h2{
     height: 60vh; /* 60% de la hauteur de l'écran */
     background-color: #e5dbd5;
     border-radius: 10px; /* Arrondir les bords */
+    z-index: 9999;
 }
 
 #loading-bar {
@@ -331,6 +332,7 @@ h2{
     position: relative; /* Positionnement relatif pour les éléments enfants */
     overflow: hidden; /* Cacher le contenu qui dépasse */
     border-radius: 10px; /* Arrondir les bords */
+    z-index: 9999;
   }
 
 #current-time {
@@ -343,6 +345,7 @@ h2{
     transform: translate(100%, 0);
     padding: 10px;
     font-family: Montserrat;
+    z-index: 9999;
 }
 
 
@@ -448,7 +451,7 @@ h2{
 .footer-dark {
   width: 100%;
   padding: 50px 0;
-  color: #f0f9ff;
+  color: #ffffff;
   background-color: #0e2338;
 }
 
@@ -536,8 +539,20 @@ h2{
     margin-bottom:0;
   }
 
+  footer .btn-primary, .dashboard-content .btn-primary{
+    background-color: #42596f;
+    border-radius: 15px;
+    margin-top: 10px;
+    width: 60%;
+    border: #42596f;
+  }
+  footer .btn-primary:hover , .dashboard-content .btn-primary:hover{
+    background-color: #a1acb7;
+  }
 
-
+#footThree a{
+  color: #eee;
+}
 
 
 
@@ -653,7 +668,7 @@ h2{
   object-fit: cover;
   width: 35vw;
   height: 50vh;
-  margin-left: -5%;
+  margin-left: 10%;
   transition: opacity 1s;
 }
 .article-image-deux {
@@ -731,6 +746,7 @@ h2{
     }
 
     .article, .article img, .article h2, .article p, .article button, .text-article {
+      
         margin-top: 2%;
         margin-bottom: 2%;
         margin-left: auto;
@@ -1032,11 +1048,12 @@ animation des articles
 
 /* Formulaire */
 .card {
-  background-color: rgba(255, 238, 223, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   border: none;
   border-radius: 20px;
   margin-bottom: 10%;
   padding: 20px;
+  color: #0E2338;
 }
 .card-header {
   font-size: 1.5rem;
@@ -1067,6 +1084,15 @@ animation des articles
   height: 50px;
   line-height: 50px;
 }
+#connexion{
+  height: 50px;
+  line-height: 50px;
+}
+
+.text-muted.text-center a.text-primary {
+  color: #9a89a7 !important;
+}
+
 @media (min-width: 992px) {
   .image-section {
       display: block;
@@ -1090,10 +1116,13 @@ animation des articles
 
 /* Professionnels */
 
+.professionnel-link{
+  cursor: pointer;
+}
 .medecin-container {
-  background-color: rgba(255, 238, 223, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 15px; /* Arrondir les coins du conteneur */
-  padding: 20px;
+  padding: 50px;
 }
 
 .medecin-card {
@@ -1103,25 +1132,27 @@ animation des articles
 
 .medecin-image {
   border-radius: 50%; /* Rendre l'image ronde */
-  width: 120px; /* Taille de l'image */
-  height: 120px; /* Taille de l'image */
+  width: 100px; /* Taille de l'image */
+  height: 100px; /* Taille de l'image */
   object-fit: cover; /* Ajuster et couper l'image pour qu'elle remplisse le cadre */
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .btn-contact {
-  background-color: #a94ec5; /* Couleur de Bootstrap pour les boutons */
+  background-color: #9a89a7; /* Couleur de Bootstrap pour les boutons */
   border: none;
   color: #0E2338;
-  padding: 10px 20px;
+  padding: 5px 40px;
   border-radius: 30px; /* Boutons arrondis */
   text-decoration: none; /* Supprimer le soulignement des liens */
   display: inline-block;
   margin-top: 10px;
+  height: 15%;
 }
 
 .btn-contact:hover{
-  background-color: #cd8ce0;
+  background-color: #ded8e2;
 }
 /* Pour les petits écrans, assurez-vous que les images ne sont pas trop grandes */
 @media (max-width: 781px) {
@@ -1147,7 +1178,6 @@ animation des articles
   z-index: 1000;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .popup-content {
@@ -1168,7 +1198,6 @@ animation des articles
 
 .popup-header {
   text-align: center;
-  border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
 }
 
@@ -1182,6 +1211,7 @@ animation des articles
 .popup-text {
   flex: 1;
   /* Plus de styles pour le texte ici */
+  margin-right: 20px;
 }
 
 .popup-map {
@@ -1279,7 +1309,7 @@ animation des articles
 }
 
 .h3{
-  margin-left: 45%;
+  margin-left: 41%;
 }
 
 
@@ -1320,3 +1350,5 @@ animation des articles
     margin-top: -30px;
   }
 }
+
+

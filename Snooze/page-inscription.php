@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="main-content animate-de-bas">
+<section class="first animate-de-bas">
 <!-- Début du formulaire d'inscription -->
 <div id="form" class="container mt-5 mont">
     <div class="row">
@@ -48,9 +48,9 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-8 col-md-12 text-center">
-                                <button type="button" id="inscription" class="mt-4 mb-2 bouton-image" name="inscrip" href="<?php echo get_template_directory_uri(); ?>/connexion">S'INSCRIRE</button>
+                                <a id="inscription" class="mt-4 mb-2 bouton-image" name="inscrip" href="<?php echo home_url('connexion') ?>">S'INSCRIRE</a>
                                 <div class=" col-lg-8card-footer text-muted text-center">
-                                    Déjà un compte ? <a href="#" class="text-primary">Connecte toi</a>
+                                    Déjà un compte ? <a href="<?php echo home_url('connexion') ?>" class="text-primary">Connecte toi</a>
                                 </div>
                             </div>
                         </div>

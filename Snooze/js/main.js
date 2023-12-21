@@ -105,6 +105,8 @@ generateGradient();
 
 
 
+
+
 //page troubles et guides et pro
 
 // JavaScript
@@ -278,6 +280,112 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
+
+
+
+
+
+
+// Page carnet
+
+document.addEventListener('DOMContentLoaded', function() {
+    var currentDate = new Date();
+    var currentMonth = currentDate.getMonth();
+    var currentYear = currentDate.getFullYear();
+    var monthNames = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+                      "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+
+    function updateCalendar(month, year) {
+        var firstDay = new Date(year, month, 1);
+        var lastDay = new Date(year, month + 1, 0);
+
+        var htmlContent = "<table class='calendar-table'>";
+        htmlContent += "<thead><tr>";
+        // Entêtes de jours
+        for (var i = 0; i < 7; i++) {
+            htmlContent += "<th>" + "DLMMJVS"[i] + "</th>";
+        }
+        htmlContent += "</tr></thead><tbody>";
+
+        // Remplit les jours vides de la première semaine
+        var dayOfWeek = firstDay.getDay();
+        dayOfWeek = dayOfWeek === 0 ? 7 : dayOfWeek; // Ajustement pour commencer la semaine le lundi
+        for (var i = 1; i < dayOfWeek; i++) {
+            htmlContent += "<td></td>";
+        }
+
+        var dayCounter = 1;
+        while (dayCounter <= lastDay.getDate()) {
+            if (dayOfWeek === 1) {
+                htmlContent += "<tr>"; // Commence une nouvelle ligne chaque lundi
+            }
+
+            htmlContent += "<td>" + dayCounter + "</td>";
+            if (dayOfWeek === 7) {
+                htmlContent += "</tr>"; // Termine la ligne chaque dimanche
+                dayOfWeek = 0;
+            }
+
+            dayCounter++;
+            dayOfWeek++;
+        }
+
+        // Remplit les jours vides de la dernière semaine
+        if (dayOfWeek !== 1) {
+            for (var i = dayOfWeek; i <= 7; i++) {
+                htmlContent += "<td></td>";
+            }
+            htmlContent += "</tr>";
+        }
+        htmlContent += "</tbody></table>";
+
+        document.getElementById('calendar').innerHTML = htmlContent;
+        document.getElementById('calendar-month').textContent = monthNames[month] + " " + year;
+    }
+
+    function navigateMonth(direction) {
+        currentMonth += direction;
+        if (currentMonth < 0) {
+            currentMonth = 11;
+            currentYear--;
+        } else if (currentMonth > 11) {
+            currentMonth = 0;
+            currentYear++;
+        }
+        updateCalendar(currentMonth, currentYear);
+    }
+
+    // Bouton mois précédent
+    document.getElementById('prev-month').addEventListener('click', function() {
+        navigateMonth(-1);
+    });
+
+    // Bouton mois suivant
+    document.getElementById('next-month').addEventListener('click', function() {
+        navigateMonth(1);
+    });
+
+    // Affiche le calendrier actuel lors du chargement initial
+    updateCalendar(currentMonth, currentYear);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Loading bar 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -372,3 +480,9 @@ setupCarousel('info-oceanie');
 
 
   
+
+
+
+
+
+
