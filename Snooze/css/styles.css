@@ -1380,6 +1380,9 @@ animation des articles
 
 /* Responsive styles */
 @media (max-width: 781px) {
+  .user-profile{
+    margin-top: 25%;
+  }
   .my-form button[type="submit"] {
     margin-left: 0%;
   }
