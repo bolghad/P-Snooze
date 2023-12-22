@@ -17,7 +17,7 @@
                         <ul>
                             <li><a href="<?php echo home_url('connexion') ?>">Connexion</a></li>
                             <li><a href="<?php echo home_url('dashboard') ?>">Journal</a></li>
-                            <li><a href="<?php echo home_url('confidentialité') ?>">Mentions légales</a></li>
+                            <li><a href="<?php echo home_url('mentions') ?>">Mentions légales</a></li>
                         </ul>
                     </div>
                     <div class="col-md-5 item text" id="footThree">

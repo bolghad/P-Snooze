@@ -6,14 +6,14 @@
       <!-- Profil et Menu -->
       <div class="col-12 col-md-2 offset-md-1">
         <div class="user-profile mb-3 p-3 text-center animate-de-gauche">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" alt="Profil" class="img-fluid rounded-circle">
-          <h4 class="mt-2 porto">ANNE DUBOIS</h4>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/med1.jpg" alt="Profil" class="img-fluid rounded-circle">
+          <h4 class="mt-2 porto">Ahmadreza Bolghad</h4>
           <button class="btn">Modifier</button>
         </div>
         <div class="sidebar-menu p-3 animate-de-gauche">
-          <button type="button" class="d-block p-2 mb-2">Dashboard <i class="icon-dashboard"></i></button>
-          <button type="button" class="d-block p-2 mb-2 active">Carnet <i class="icon-carnet"></i></button>
-          <button type="button" class="d-block p-2">Paramètres <i class="icon-parametres"></i></button>
+            <a class="d-block p-2 mb-2" href="<?php echo home_url('dashboard') ?>">Dashboard <i class="icon-dashboard"></i></a>
+            <a class="d-block p-2 mb-2" href="<?php echo home_url('carnet') ?>">Carnet <i class="icon-carnet"></i></a>
+            <a class="d-block p-2" href="<?php echo home_url('parametres') ?>">Paramètres <i class="icon-parametres"></i></a>
         </div>
       </div>
 

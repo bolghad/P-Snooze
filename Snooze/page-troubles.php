@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <section class="first">
     <h1 class="text-center animate-de-haut">Détails des troubles du sommeil</h1>
-    <ul class="nav list-unstyled animate-de-gauche">
+    <ul class="nav list-unstyled animate-de-gauche mont">
         <li class="nav-item">
             <a class="nav-link trouble-link active" id="boutonTrouble1">Insomnie</a>
         </li>

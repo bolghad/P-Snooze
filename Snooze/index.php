@@ -139,7 +139,7 @@
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary btn-lg mont" data-dismiss="modal">Conditions</button>
+        <a class="btn btn-secondary btn-lg mont cond" data-dismiss="modal" href="<?php echo home_url('mentions') ?>">Conditions</a>
         <button type="button" class="btn btn-secondary btn-lg mont" data-dismiss="modal">Décliner</button>
         <button type="button" class="btn btn-primary btn-lg mont" data-dismiss="modal">Accepter</button>
       </div>

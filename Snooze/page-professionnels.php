@@ -2,9 +2,9 @@
 
 <section class="first">
     <h1 class="text-center animate-de-haut">Professionnels du sommeil</h1>
-    <ul class="nav list-unstyled animate-de-gauche">
+    <ul class="nav list-unstyled animate-de-gauche mont">
         <li class="nav-item">
-            <a class="nav-link professionnel-link active" id="boutonProfessionnel1">Médecine du Sommeil</a>
+            <a class="nav-link professionnel-link active" id="boutonProfessionnel1">Médecin du Sommeil</a>
         </li>
         <li class="nav-item">
             <a class="nav-link professionnel-link" id="boutonProfessionnel2">Psychiatres</a>
@@ -26,7 +26,7 @@
     <div class="row medecin-container justify-content-center">
         <!-- Colonne pour le premier médecin -->
         <div class="col-lg-4 col-md-6 col-sm-12 medecin-card">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" class="medecin-image" alt="Dr Bolghad Ahmadreza">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/med1.jpg" class="medecin-image" alt="Dr Bolghad Ahmadreza">
         <h5 class="medecin-info">Dr Bolghad</h5>
         <p class="medecin-info">1090 Jette</p>
         <button class="btn-contact" data-target="#popupMedecin1">Contactez moi</button>
@@ -47,7 +47,7 @@
                                 <iframe src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=rue%20vogler+(My%20Business%20Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>       
                             </div> 
                             <div class="popup-info">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" alt="Dr. Biannie">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/med1.jpg" alt="Dr. Bolghad">
                                 <h3>DR. Bolghad</h3>
                                 <p>Jette</p>
                                 <p>22 ans</p>
@@ -58,8 +58,8 @@
                 </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 medecin-card">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" class="medecin-image img-fluid" alt="Dr Bia">
-            <h5 class="medecin-info">Dr Biannie</h5>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/med2.jpg" class="medecin-image img-fluid" alt="Dr Bia">
+            <h5 class="medecin-info">Dr Dubois</h5>
             <p class="medecin-info">1030 Schaerbeek</p>
             <button class="btn-contact" data-target="#popupMedecin2">Contactez moi</button>
                 <!-- Pop-up pour le médecin 1 -->
@@ -71,7 +71,7 @@
                         </div>
                         <div class="popup-body d-flex">
                             <div class="popup-text mb-3">
-                                <p>Je suis le Dr. Oscar Jeanne, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
+                                <p>Je suis le Dr. Dubois, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
                                 <!-- Plus de texte ici -->
                             </div>
                             <div class="popup-map">
@@ -79,8 +79,8 @@
                                 <iframe src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=rue%20vogler+(My%20Business%20Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>       
                             </div> 
                             <div class="popup-info">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" alt="Dr. Biannie">
-                                <h3>DR. BIANNIE</h3>
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/med2.jpg" alt="Dr. Biannie">
+                                <h3>DR. Dubois</h3>
                                 <p>Schaerbeek</p>
                                 <p>31 ans</p>
                                 <button class="btn-contact">Contactez moi</button>
@@ -90,9 +90,9 @@
                 </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 medecin-card">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" class="medecin-image img-fluid" alt="Dr Bia">
-            <h5 class="medecin-info">Dr Biannie</h5>
-            <p class="medecin-info">1030 Schaerbeek</p>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/med3.jpg" class="medecin-image img-fluid" alt="Dr Bia">
+            <h5 class="medecin-info">Dr Patrick</h5>
+            <p class="medecin-info">1000 Bruxelles</p>
             <button class="btn-contact" data-target="#popupMedecin3">Contactez moi</button>
                 <!-- Pop-up pour le médecin 1 -->
                 <div class="popup-container" id="popupMedecin3">
@@ -103,7 +103,7 @@
                         </div>
                         <div class="popup-body d-flex">
                             <div class="popup-text mb-3">
-                                <p>Je suis le Dr. Oscar Jeanne, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
+                                <p>Je suis le Dr. Patrick, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
                                 <!-- Plus de texte ici -->
                             </div>
                             <div class="popup-map">
@@ -111,9 +111,9 @@
                                 <iframe src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=rue%20vogler+(My%20Business%20Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>       
                             </div> 
                             <div class="popup-info">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" alt="Dr. Biannie">
-                                <h3>DR. BIANNIE</h3>
-                                <p>Schaerbeek</p>
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/med3.jpg" alt="Dr. Biannie">
+                                <h3>DR. Patrick</h3>
+                                <p>Bruxelles</p>
                                 <p>31 ans</p>
                                 <button class="btn-contact">Contactez moi</button>
                             </div>
@@ -122,9 +122,9 @@
                 </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 medecin-card">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" class="medecin-image img-fluid" alt="Dr Bia">
-            <h5 class="medecin-info">Dr Biannie</h5>
-            <p class="medecin-info">1030 Schaerbeek</p>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/med4.jpg" class="medecin-image img-fluid" alt="Dr Bia">
+            <h5 class="medecin-info">Dr Marie</h5>
+            <p class="medecin-info">1000 Bruxelles</p>
             <button class="btn-contact" data-target="#popupMedecin4">Contactez moi</button>
                 <!-- Pop-up pour le médecin 1 -->
                 <div class="popup-container" id="popupMedecin4">
@@ -135,7 +135,7 @@
                             </div>
                             <div class="popup-body d-flex">
                                 <div class="popup-text mb-3">
-                                    <p>Je suis le Dr. Oscar Jeanne, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
+                                    <p>Je suis le Dr. Marie, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
                                     <!-- Plus de texte ici -->
                                 </div>
                                 <div class="popup-map">
@@ -143,9 +143,9 @@
                                     <iframe src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=rue%20vogler+(My%20Business%20Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>       
                                 </div> 
                                 <div class="popup-info">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" alt="Dr. Biannie">
-                                    <h3>DR. BIANNIE</h3>
-                                    <p>Schaerbeek</p>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/med4.jpg" alt="Dr. Biannie">
+                                    <h3>DR. Marie</h3>
+                                    <p>Bruxelles</p>
                                     <p>31 ans</p>
                                     <button class="btn-contact">Contactez moi</button>
                                 </div>
@@ -154,9 +154,9 @@
                     </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 medecin-card">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" class="medecin-image img-fluid" alt="Dr Bia">
-            <h5 class="medecin-info">Dr Biannie</h5>
-            <p class="medecin-info">1030 Schaerbeek</p>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/med5.jpg" class="medecin-image img-fluid" alt="Dr Bia">
+            <h5 class="medecin-info">Dr Hajj</h5>
+            <p class="medecin-info">1000 Bruxelles</p>
             <button class="btn-contact" data-target="#popupMedecin5">Contactez moi</button>
                 <!-- Pop-up pour le médecin 1 -->
                 <div class="popup-container" id="popupMedecin5">
@@ -167,7 +167,7 @@
                             </div>
                             <div class="popup-body d-flex">
                                 <div class="popup-text mb-3">
-                                    <p>Je suis le Dr. Oscar Jeanne, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
+                                    <p>Je suis le Dr. Hajj, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
                                     <!-- Plus de texte ici -->
                                 </div>
                                 <div class="popup-map">
@@ -175,9 +175,9 @@
                                     <iframe src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=rue%20vogler+(My%20Business%20Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>       
                                 </div> 
                                 <div class="popup-info">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" alt="Dr. Biannie">
-                                    <h3>DR. BIANNIE</h3>
-                                    <p>Schaerbeek</p>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/med5.jpg" alt="Dr. Biannie">
+                                    <h3>DR. Hajj</h3>
+                                    <p>Bruxelles</p>
                                     <p>31 ans</p>
                                     <button class="btn-contact">Contactez moi</button>
                                 </div>
@@ -186,8 +186,8 @@
                     </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 medecin-card">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" class="medecin-image img-fluid" alt="Dr Bia">
-            <h5 class="medecin-info">Dr Biannie</h5>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/med6.jpg" class="medecin-image img-fluid" alt="Dr Bia">
+            <h5 class="medecin-info">Dr Rudolf</h5>
             <p class="medecin-info">1030 Schaerbeek</p>
             <button class="btn-contact" data-target="#popupMedecin6">Contactez moi</button>
                 <!-- Pop-up pour le médecin 1 -->
@@ -199,7 +199,7 @@
                             </div>
                             <div class="popup-body d-flex">
                                 <div class="popup-text mb-3">
-                                    <p>Je suis le Dr. Oscar Jeanne, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
+                                    <p>Je suis le Dr. Rudolf, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
                                     <!-- Plus de texte ici -->
                                 </div>
                                 <div class="popup-map">
@@ -207,8 +207,8 @@
                                     <iframe src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=rue%20vogler+(My%20Business%20Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>       
                                 </div> 
                                 <div class="popup-info">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" alt="Dr. Biannie">
-                                    <h3>DR. BIANNIE</h3>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/med6.jpg" alt="Dr. Biannie">
+                                    <h3>DR. Rudolf</h3>
                                     <p>Schaerbeek</p>
                                     <p>31 ans</p>
                                     <button class="btn-contact">Contactez moi</button>
@@ -221,12 +221,12 @@
     </div>
 
 
-    <div id="articleProfessionnels2" class="container mt-5 article active mb-5 mont animate-de-bas">
+    <div id="articleProfessionnels2" class="container mt-5 article mb-5 mont animate-de-bas">
     <div class="row medecin-container justify-content-center">
         <!-- Colonne pour le premier médecin -->
         <div class="col-lg-4 col-md-6 col-sm-12 medecin-card">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" class="medecin-image" alt="Dr Bolghad Ahmadreza">
-        <h5 class="medecin-info">Dr Bolghad</h5>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" class="medecin-image" alt="Dr Biannie Ahmadreza">
+        <h5 class="medecin-info">Dr Biannie</h5>
         <p class="medecin-info">1090 Jette</p>
         <button class="btn-contact" data-target="#popupMedecin7">Contactez moi</button>
             <!-- Pop-up pour le médecin 1 -->
@@ -238,7 +238,7 @@
                         </div>
                         <div class="popup-body d-flex">
                             <div class="popup-text mb-3">
-                                <p>Je suis le Dr. Bolghad Ahmadreza, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
+                                <p>Je suis le Dr. Biannie, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
                                 <!-- Plus de texte ici -->
                             </div>
                             <div class="popup-map">
@@ -247,7 +247,7 @@
                             </div> 
                             <div class="popup-info">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" alt="Dr. Biannie">
-                                <h3>DR. Bolghad</h3>
+                                <h3>DR. Biannie</h3>
                                 <p>Jette</p>
                                 <p>22 ans</p>
                                 <button class="btn-contact">Contactez moi</button>
@@ -421,12 +421,12 @@
 
 
 
-    <div id="articleProfessionnels3" class="container mt-5 article active mb-5 mont animate-de-bas">
+    <div id="articleProfessionnels3" class="container mt-5 article mb-5 mont animate-de-bas">
     <div class="row medecin-container justify-content-center">
         <!-- Colonne pour le premier médecin -->
         <div class="col-lg-4 col-md-6 col-sm-12 medecin-card">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" class="medecin-image" alt="Dr Bolghad Ahmadreza">
-        <h5 class="medecin-info">Dr Bolghad</h5>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" class="medecin-image" alt="Dr Biannie Ahmadreza">
+        <h5 class="medecin-info">Dr Biannie</h5>
         <p class="medecin-info">1090 Jette</p>
         <button class="btn-contact" data-target="#popupMedecin13">Contactez moi</button>
             <!-- Pop-up pour le médecin 1 -->
@@ -438,7 +438,7 @@
                         </div>
                         <div class="popup-body d-flex">
                             <div class="popup-text mb-3">
-                                <p>Je suis le Dr. Bolghad Ahmadreza, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
+                                <p>Je suis le Dr. Biannie, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
                                 <!-- Plus de texte ici -->
                             </div>
                             <div class="popup-map">
@@ -447,7 +447,7 @@
                             </div> 
                             <div class="popup-info">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" alt="Dr. Biannie">
-                                <h3>DR. Bolghad</h3>
+                                <h3>DR. Biannie</h3>
                                 <p>Jette</p>
                                 <p>22 ans</p>
                                 <button class="btn-contact">Contactez moi</button>
@@ -621,12 +621,12 @@
 
 
 
-    <div id="articleProfessionnels4" class="container mt-5 article active mb-5 mont animate-de-bas">
+    <div id="articleProfessionnels4" class="container mt-5 article mb-5 mont animate-de-bas">
     <div class="row medecin-container justify-content-center">
         <!-- Colonne pour le premier médecin -->
         <div class="col-lg-4 col-md-6 col-sm-12 medecin-card">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" class="medecin-image" alt="Dr Bolghad Ahmadreza">
-        <h5 class="medecin-info">Dr Bolghad</h5>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" class="medecin-image" alt="Dr Biannie Ahmadreza">
+        <h5 class="medecin-info">Dr Biannie</h5>
         <p class="medecin-info">1090 Jette</p>
         <button class="btn-contact" data-target="#popupMedecin19">Contactez moi</button>
             <!-- Pop-up pour le médecin 1 -->
@@ -638,7 +638,7 @@
                         </div>
                         <div class="popup-body d-flex">
                             <div class="popup-text mb-3">
-                                <p>Je suis le Dr. Bolghad Ahmadreza, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
+                                <p>Je suis le Dr. Biannie, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
                                 <!-- Plus de texte ici -->
                             </div>
                             <div class="popup-map">
@@ -647,7 +647,7 @@
                             </div> 
                             <div class="popup-info">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" alt="Dr. Biannie">
-                                <h3>DR. Bolghad</h3>
+                                <h3>DR. Biannie</h3>
                                 <p>Jette</p>
                                 <p>22 ans</p>
                                 <button class="btn-contact">Contactez moi</button>
@@ -821,12 +821,12 @@
 
 
 
-    <div id="articleProfessionnels5" class="container mt-5 article active mb-5 mont animate-de-bas">
+    <div id="articleProfessionnels5" class="container mt-5 article mb-5 mont animate-de-bas">
     <div class="row medecin-container justify-content-center">
         <!-- Colonne pour le premier médecin -->
         <div class="col-lg-4 col-md-6 col-sm-12 medecin-card">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" class="medecin-image" alt="Dr Bolghad Ahmadreza">
-        <h5 class="medecin-info">Dr Bolghad</h5>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" class="medecin-image" alt="Dr Biannie Ahmadreza">
+        <h5 class="medecin-info">Dr Biannie</h5>
         <p class="medecin-info">1090 Jette</p>
         <button class="btn-contact" data-target="#popupMedecin25">Contactez moi</button>
             <!-- Pop-up pour le médecin 1 -->
@@ -838,7 +838,7 @@
                         </div>
                         <div class="popup-body d-flex">
                             <div class="popup-text mb-3">
-                                <p>Je suis le Dr. Bolghad Ahmadreza, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
+                                <p>Je suis le Dr. Biannie, un médecin dédié et passionné par la médecine du sommeil. Fort de plusieurs années d'expérience dans ce domaine spécialisé, j'ai consacré ma carrière à comprendre les mystères du sommeil et à résoudre les problématiques complexes qui y sont liées. Ma pratique est fondée sur une approche holistique et individualisée, intégrant les dernières avancées scientifiques pour traiter les troubles du sommeil.</p>
                                 <!-- Plus de texte ici -->
                             </div>
                             <div class="popup-map">
@@ -847,7 +847,7 @@
                             </div> 
                             <div class="popup-info">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" alt="Dr. Biannie">
-                                <h3>DR. Bolghad</h3>
+                                <h3>DR. Biannie</h3>
                                 <p>Jette</p>
                                 <p>22 ans</p>
                                 <button class="btn-contact">Contactez moi</button>

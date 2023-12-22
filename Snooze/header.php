@@ -72,6 +72,14 @@
     outline: none; /* Supprime le style de survol par défaut du navigateur */
 }
 
+@media (max-width: 781px) {
+    .bouton-image{
+        width:250px;
+        height:60px;
+        line-height: 55px;
+        font-size:1em;
+    }
+}
 
 
 

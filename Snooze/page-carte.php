@@ -260,7 +260,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/img/img1.jpg">
                     <div class="content">
                         <h2>Paris</h2>
-                        <p>À Paris, les gens ont tendance à se coucher un peu plus tard par rapport à d'autres villes européennes, souvent autour de minuit ou même plus tard, en particulier les jeunes et les travailleurs du secteur des services. La vie nocturne animée et la culture des cafés contribuent à des soirées prolongées. Cependant, beaucoup de Parisiens se lèvent tôt pour se rendre au travail, ce qui signifie qu'ils valorisent un sommeil de qualité, bien que ce soit parfois pour une durée plus courte.</p>
+                        <p>À Paris, les gens ont tendance à se coucher un peu plus tard par rapport à d'autres villes européennes, souvent autour de minuit ou même plus tard, en particulier les jeunes et les travailleurs du secteur des services.</p>
                     </div>
                 </div>
                 <div class="item">
@@ -274,7 +274,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/img/img2.jpg">
                     <div class="content">
                         <h2>Bruxelles</h2>
-                        <p>À Bruxelles, les habitudes de sommeil sont généralement plus conformes à un horaire de travail standard. Beaucoup de Bruxellois se couchent entre 22 heures et minuit. Avec une culture de travail importante et une présence significative d'institutions européennes, les habitants tendent à favoriser un sommeil réparateur pour être productifs le jour suivant. Les week-ends peuvent voir des horaires plus détendus, avec des soirées prolongées et des grasses matinées.</p>
+                        <p>À Bruxelles, les habitudes de sommeil sont généralement plus conformes à un horaire de travail standard. Beaucoup de Bruxellois se couchent entre 22 heures et minuit.</p>
                     </div>
                 </div>
                 <!-- Ajouter d'autres villes d'Europe ici avec le même format -->

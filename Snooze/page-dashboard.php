@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <section class="main-content">
 
@@ -7,15 +8,15 @@
     <div class="col-12 col-md-2 offset-md-1">
       <!-- Profil -->
       <div class="user-profile mb-3 p-3 text-center animate-de-gauche">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/pp.jpg" alt="Profil" class="img-fluid rounded-circle">
-        <h4 class="mt-2 porto">ANNE DUBOIS</h4>
+        <img src="<?php echo get_template_directory_uri(); ?>/img/med1.jpg" alt="Profil" class="img-fluid rounded-circle">
+        <h4 class="mt-2 porto">Ahmadreza Bolghad</h4>
         <button class="btn">Modifier</button>
       </div>
       <!-- Menu -->
       <div class="sidebar-menu p-3 animate-de-gauche">
-        <button type="button" class="d-block p-2 mb-2">Dashboard <i class="icon-dashboard"></i></button>
-        <button type="button" class="d-block p-2 mb-2">Carnet <i class="icon-carnet"></i></button>
-        <button type="button" class="d-block p-2">Paramètres <i class="icon-parametres"></i></button>
+        <a class="d-block p-2 mb-2" href="<?php echo home_url('dashboard') ?>">Dashboard <i class="icon-dashboard"></i></a>
+        <a class="d-block p-2 mb-2" href="<?php echo home_url('carnet') ?>">Carnet <i class="icon-carnet"></i></a>
+        <a class="d-block p-2" href="<?php echo home_url('parametres') ?>">Paramètres <i class="icon-parametres"></i></a>
       </div>
     </div>
     <div class="col-12 col-md-8 animate-de-haut">
@@ -38,22 +39,21 @@
                 <option value="7to9">7-9h</option>
                 <option value="more9">plus de 9h</option>
                 </select>
-                <label>de sommeil par nuit environ.</label>
-                <label> Je me reveille </label>
+                <label>en moyenne par nuit.</label>
+                <label> Je me suis reveillé.e </label>
                 <select name="wakeUpFrequency">
                 <option value="">choisissez</option>
                 <option value="often">souvent</option>
                 <option value="sometimes">parfois</option>
                 <option value="rarely">rarement</option>
                 </select>
-                <label>de réveil durant ma nuit.</label>
-                <label>Je dispose d'un</label>
-                <input type="text" name="routine" placeholder="une routine de sommeil." />
-                <label>un environnement propice au sommeil.</label>
-                <input type="text" name="screenTime" placeholder="des écrans 2h avant de m'endormir." />
-                <label>J'ai</label>
-                <input type="text" name="sleepIssues" placeholder="comme problèmes de sommeil diagnostiqué," />
-                <label>de l'anxiété et stress avant de m'endormir.</label>
+                <label>durant la nuit.</label>
+                <label>Ma routine de sommeil se résume à</label>
+                <input type="text" name="routine" placeholder="ta routine de sommeil." />
+                <label>L'environnement qui m'aide à dormir est </label>
+                <input type="text" name="screenTime" placeholder="ton environnement." />
+                <label>Malgré tout j'ai du mal à m'endormir à cause de </label>
+                <input type="text" name="sleepIssues" placeholder="tes problèmes de sommeil." /> 
                 <div class="form-group d-flex justify-content-center col-md-9">
                     <button type="submit" class="btn btn-primary">Envoyer mes réponses</button>
                 </div>
@@ -64,17 +64,19 @@
       <!-- Graphiques -->
       <div class="p-3 animate-de-droite">
         <div class="row">
-        <div class="graph-section col-12 col-md-4 p-4 mx-2">
-            <div class="graph-placeholder">Graphique 1</div>
+            <div class="graph-section col-12 col-sm-12 col-md-4 p-4 mx-2">
+                <canvas id="myDoughnutChart" width="250" height="200"></canvas>
+            </div>
+            <div class="graph-section col-12 col-sm-12 col-md-4 p-4 mx-2">
+                <canvas id="myBarChart" width="250" height="200"></canvas>
+            </div>
+            <div class="graph-section col-12 col-sm-12 col-md-4 p-4 mx-2">
+                <canvas id="myLineChart" width="250" height="200"></canvas>
+            </div>
         </div>
-        <div class="graph-section col-12 col-md-4 p-4 mx-2">
-            <div class="graph-placeholder">Graphique 2</div>
-        </div>
-        <div class="graph-section col-12 col-md-4 p-4 mx-2">
-            <div class="graph-placeholder">Graphique 3</div>
-        </div>
-        </div>
-        </div>
+    </div>
+
+
   </div>
 </div>
 

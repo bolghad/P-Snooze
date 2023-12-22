@@ -47,8 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function generateGradient() {
     const now = new Date();
-    //const hour = now.getHours();
-    const hour =10;
+    const hour = now.getHours();
 
 
 
@@ -374,6 +373,65 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+//graph
+document.addEventListener('DOMContentLoaded', function () {
+    // Doughnut Chart, vous l'avez déjà donc je ne le change pas
+    const doughnutChartCtx = document.getElementById('myDoughnutChart').getContext('2d');
+    const doughnutChartData = {
+        labels: ['Red', 'Blue'],
+        datasets: [{
+            label: 'My First Dataset',
+            data: [25, 75],
+            backgroundColor: ['#a1acb7', '#0e2338'],
+            hoverOffset: 4
+        }]
+    };
+    const doughnutChart = new Chart(doughnutChartCtx, {
+        type: 'doughnut',
+        data: doughnutChartData
+    });
+
+    // Bar Chart
+    const barChartCtx = document.getElementById('myBarChart').getContext('2d');
+    const barChartData = {
+        labels: ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin'],
+        datasets: [{
+            label: 'Number of Visitors',
+            data: [200, 250, 300, 250, 220, 210],
+            backgroundColor: '#0e2338',
+            borderColor: '#a1acb7',
+            borderWidth: 1
+        }]
+    };
+    const barChart = new Chart(barChartCtx, {
+        type: 'bar',
+        data: barChartData,
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    // Line Chart
+    const lineChartCtx = document.getElementById('myLineChart').getContext('2d');
+    const lineChartData = {
+        labels: ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin'],
+        datasets: [{
+            label: 'Total Sales',
+            data: [5000, 6000, 5500, 4500, 4000, 6500],
+            fill: false,
+            borderColor: '#0e2338',
+            tension: 0.1
+        }]
+    };
+    const lineChart = new Chart(lineChartCtx, {
+        type: 'line',
+        data: lineChartData,
+    });
+});
 
 
 
@@ -480,9 +538,4 @@ setupCarousel('info-oceanie');
 
 
   
-
-
-
-
-
 
