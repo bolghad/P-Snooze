@@ -1,6 +1,13 @@
 <?php get_header(); ?>
 <section class="first">
     <h1 class="text-center animate-de-haut">Conseils pour un sommeil réparateur</h1>
+        <?php
+            wp_nav_menu(array(
+                'theme_location' => 'guides_menu',
+                'container' => 'ul',
+                'menu_class' => 'nav list-unstyled animate-de-gauche mont',
+            ));
+        ?>
     <ul class="nav list-unstyled animate-de-gauche mont">
         <li class="nav-item">
             <a class="nav-link trouble-link active" id="boutonGuides1">Environnement propice au sommeil</a>

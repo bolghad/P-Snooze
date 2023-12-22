@@ -378,7 +378,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Doughnut Chart, vous l'avez déjà donc je ne le change pas
     const doughnutChartCtx = document.getElementById('myDoughnutChart').getContext('2d');
     const doughnutChartData = {
-        labels: ['Red', 'Blue'],
+        labels: ['gain', 'initial'],
         datasets: [{
             label: 'My First Dataset',
             data: [25, 75],
@@ -396,7 +396,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const barChartData = {
         labels: ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin'],
         datasets: [{
-            label: 'Number of Visitors',
+            label: 'Moyenne de sommeil',
             data: [200, 250, 300, 250, 220, 210],
             backgroundColor: '#0e2338',
             borderColor: '#a1acb7',
@@ -420,7 +420,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const lineChartData = {
         labels: ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin'],
         datasets: [{
-            label: 'Total Sales',
+            label: 'Moyenne de sommeil',
             data: [5000, 6000, 5500, 4500, 4000, 6500],
             fill: false,
             borderColor: '#0e2338',

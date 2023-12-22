@@ -2,6 +2,13 @@
 
 <section class="first">
     <h1 class="text-center animate-de-haut">Professionnels du sommeil</h1>
+        <?php
+            wp_nav_menu(array(
+                'theme_location' => 'professionnel_menu', // Doit correspondre à l'identifiant défini dans functions.php
+                'container' => 'ul', // Conteneur du menu
+                'menu_class' => 'nav list-unstyled animate-de-gauche mont', // Classe CSS pour le menu
+            ));
+        ?>
     <ul class="nav list-unstyled animate-de-gauche mont">
         <li class="nav-item">
             <a class="nav-link professionnel-link active" id="boutonProfessionnel1">Médecin du Sommeil</a>

@@ -136,7 +136,7 @@
   'container' => false, // permet de retirer mon container
   'menu_class' => 'navbar-nav me-auto' // la classe que je veux dans mon <ul></ul>
 ]); ?> -->
-                        <button class="header-button"><span class="rotate">⮞</span>Conseils</button>
+                        <button class="header-button"><span class="rotate">&#x2B9E;</span>Conseils</button>
                         <div class="dropdown-content">
                        
                             <a href="<?php echo home_url('troubles') ?>" >Troubles</a>
@@ -155,7 +155,7 @@
                 <!-- Boutons de droite (visible sur desktop) -->
                 <div class="header-buttons-right">
                     <div class="dropdown">
-                        <button class="header-button"><span class="rotate">⮞</span>Journal</button>
+                        <button class="header-button"><span class="rotate">&#x2B9E;</span>Journal</button>
                         <div class="dropdown-content">
                             <a href="<?php echo home_url('dashboard') ?>">Dashboard</a>
                             <a href="<?php echo home_url('carnet') ?>">Carnet</a>

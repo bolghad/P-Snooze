@@ -238,6 +238,10 @@ h2{
 
 /* Affichez le menu burger et le logo sur mobile avec une media query */
 @media screen and (max-width: 780px) {
+  h1{
+    margin-top: 25%;
+    font-size: 2em;
+  }
   /* Cacher le menu desktop */
   .header-buttons-left, .header-buttons-right, #logo-container {
       display: none;

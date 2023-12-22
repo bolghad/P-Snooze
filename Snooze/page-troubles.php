@@ -1,6 +1,13 @@
 <?php get_header(); ?>
 <section class="first">
     <h1 class="text-center animate-de-haut">Détails des troubles du sommeil</h1>
+        <?php
+            wp_nav_menu(array(
+                'theme_location' => 'troubles_menu',
+                'container' => 'ul',
+                'menu_class' => 'nav list-unstyled animate-de-gauche mont',
+            ));
+        ?>
     <ul class="nav list-unstyled animate-de-gauche mont">
         <li class="nav-item">
             <a class="nav-link trouble-link active" id="boutonTrouble1">Insomnie</a>
@@ -76,7 +83,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 animate-de-droite">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/ApneeDeux.jpg" alt="Image 2" class="img-fluid article-image-deux">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/apneeDeux.jpg" alt="Image 2" class="img-fluid article-image-deux">
                 </div>
             </div>
         </div>
